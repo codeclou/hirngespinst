@@ -12,22 +12,9 @@
 &nbsp;
 
 
-### Demo
-
-**showWithDelay**
-
-<img src="https://unpkg.com/hirngespinst@0.0.2/demo/demo-showWithDelay.svg" />
-
-
------
-
-
-&nbsp;
-
-
 ### Usage
 
-**showWithDelay**
+**showWithDelay** - [DEMO](https://unpkg.com/hirngespinst@0.0.2/demo/demo-showWithDelay.svg)
 
 > Shows the elements with id `frame-*` after 2 seconds  
 
