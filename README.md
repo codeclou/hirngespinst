@@ -12,9 +12,27 @@
 &nbsp;
 
 
+### Demo
+
+![](https://rawgit.com/codeclou/hirngespinst/master/demo/demo1.svg)
+
+
+-----
+
+
+&nbsp;
+
+
 ### Usage
 
 tbd
+
+```
+https://rawgit.com/codeclou/hirngespinst/master/lib/index.js
+
+https://rawgit.com/codeclou/hirngespinst/master/lib/index.css
+```
+Roboto Mono + Source Sa
 
 -----
 
