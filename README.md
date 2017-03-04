@@ -14,7 +14,7 @@
 
 ### Demo
 
-![](https://rawgit.com/codeclou/hirngespinst/master/demo/demo1.svg)
+<img src="https://rawgit.com/codeclou/hirngespinst/master/demo/demo1.svg" />
 
 
 -----
