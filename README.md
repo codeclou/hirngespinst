@@ -14,7 +14,7 @@
 
 ### Demo
 
-<img src="https://rawgit.com/codeclou/hirngespinst/master/demo/demo1.svg?v2" />
+<img src="https://codeclou.github.io/hirngespinst/demo/demo1.svg?v1" />
 
 
 -----
