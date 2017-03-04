@@ -14,7 +14,9 @@
 
 ### Demo
 
-<img src="https://codeclou.github.io/hirngespinst/demo/demo1.svg?v4" />
+**showWithDelay**
+
+<img src="https://unpkg.com/hirngespinst@0.0.2/demo/demo-showWithDelay.svg" />
 
 
 -----
