@@ -55,11 +55,10 @@
 
 .showFrameAnimation {
     opacity: 0;
-    animation-name: show;
+    animation-name: showFrame;
     animation-duration: 4s;
     animation-iteration-count: 1;
     animation-direction: alternate;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
-    animation-delay: 2s;
 }
