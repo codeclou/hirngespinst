@@ -55,41 +55,7 @@
     </g>
     <script>
         //<![CDATA[
-        const getElementsStartsWithId = (id) => {
-            var children = document.getElementsByTagName('*');
-            var elements = [], child;
-            for (var i = 0, length = children.length; i < length; i++) {
-            child = children[i];
-            if (child.id.substr(0, id.length) == id)
-                elements.push(child);
-            }
-            return elements;
-        };
-
-        const frames = getElementsStartsWithId('frame-');
-        let amountFrames = 0;
-        if (frames !== undefined && frames !== null && frames.length > 0) {
-            amountFrames = frames.length;
-        }
-
-        const getFrameIdByNumber = (number) => {
-            if (number < 10) {
-                return 'frame-0' + number;
-            }
-            return 'frame-' + number;
-        }
-        for (let i=1;i<amountFrames+1;i++) {
-            const frame = document.getElementById(getFrameIdByNumber(i));
-
-
-            frame.style["animation-delay"] = (2*i) + 's';
-            frame.style["opacity"] = 0;
-            frame.setAttribute('class', 'showFrameAnimation');
-            console.log(frame)
-        }
-
-        console.log(amountFrames);
-        console.log('init');
+        const getElementsStartsWithId=function(e){for(var t,a=document.getElementsByTagName("*"),r=[],m=0,n=a.length;n>m;m++)t=a[m],t.id.substr(0,e.length)==e&&r.push(t);return r},getFrameIdByNumber=function(e){return 10>e?"frame-0"+e:"frame-"+e},frames=getElementsStartsWithId("frame-");var amountFrames=0;void 0!==frames&&null!==frames&&frames.length>0&&(amountFrames=frames.length);for(var i=1;amountFrames+1>i;i++){const frame=document.getElementById(getFrameIdByNumber(i));frame.style["animation-delay"]=2*i+"s",frame.style.opacity=0,frame.setAttribute("class","showFrameAnimation")}
         //]]>
     </script>
 </svg>
