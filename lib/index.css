@@ -1,0 +1,20 @@
+/**
+ * Licensed under MIT License
+ * Copyright (c) 2017 Bernhard Grünewaldt
+ */
+
+@keyframes showFrame {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.showFrameAnimation {
+    opacity: 0;
+    animation-name: show;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}

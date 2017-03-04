@@ -22,5 +22,5 @@ tbd
 
 ### License
 
- * [MIT](./LICENSE) © codeclou.io
+[MIT](./LICENSE) © Bernhard Grünewaldt
   
