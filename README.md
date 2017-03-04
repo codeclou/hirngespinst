@@ -1,2 +1,26 @@
-# hirngespinst
-animated svg infographics made easy
+[![](https://codeclou.github.io/hirngespinst/img/hirngespinst-logo.svg)](https://github.com/codeclou/hirngespinst/)
+
+
+&nbsp;
+
+> Create svg infographics with ease
+
+
+-----
+
+
+&nbsp;
+
+
+### Usage
+
+tbd
+
+-----
+
+&nbsp;
+
+### License
+
+ * [MIT](./LICENSE) © codeclou.io
+  
