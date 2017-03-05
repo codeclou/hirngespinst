@@ -68,6 +68,16 @@ You can easily create such above graphic with [Sketch](https://www.sketchapp.com
 </svg>
 ```
 
+**(6)** Now use your SVG like so in your website
+
+```html
+<img src="http://myserver/my.svg" />
+```
+
+&nbsp;
+
+**Demo**
+
 See a working [demo here](https://unpkg.com/hirngespinst@0.0.10/demo/demo-showWithDelay.svg)
 
 &nbsp;
