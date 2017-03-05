@@ -36,7 +36,8 @@
             <rect id="Rectangle" fill="#555555" x="0" y="197" width="163" height="61"/>
         </g>
     </g>
-    <script src="https://unpkg.com/hirngespinst@0.0.4/dist/showWithDelay.min.js"></script>
+    <!-- YES! Not `src` but `href`. See https://developer.mozilla.org/de/docs/Web/SVG/Attribute/xlink:href -->
+    <script href="https://unpkg.com/hirngespinst@0.0.4/dist/showWithDelay.min.js"></script>
 </svg>
 ```
 
