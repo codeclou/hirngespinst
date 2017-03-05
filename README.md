@@ -6,7 +6,7 @@
 > Create svg infographics with ease
 
 
-[![](https://codeclou.github.io//hirngespinst/img/demo.gif)](https://unpkg.com/hirngespinst@0.0.8/demo/demo-showWithDelay.svg)
+[![](https://codeclou.github.io//hirngespinst/img/demo.gif)](demo-showWithDelay--withAutoHide.svg)
 
 
 -----
@@ -91,7 +91,7 @@ that forbids the loading of the Hirngespinst JS and CSS then you need to either:
 
 **:bangbang: Currently there is no way to get it to work with GitHub inside a Readme.md :bangbang:**
 
-This is how you would **embed the JS+CSS** ([demo-showWithDelay-embed.svg](./demo/demo-showWithDelay-embed.svg))
+This is how you would **embed the JS+CSS** ([demo-showWithDelay-embed.svg](./demo/demo-showWithDelay--withAutoHide--embedded.svg))
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
