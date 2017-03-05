@@ -1,4 +1,3 @@
-
 {
   "name": "hirngespinst",
   "description": "Create svg infographics with ease",
@@ -9,9 +8,17 @@
     "url": "https://github.com/codeclou/hirngespinst.git"
   },
   "scripts": {
+    "start": "./node_modules/.bin/ws -d ./ --port 7676",
+    "build": "npm run build:pre && npm run build:cp && npm run build:js && npm run build:css",
+    "build:pre": "rm -f dist/*",
+    "build:cp": "cp src/* dist/",
+    "build:js": "uglifyjs --compress --comments --mangle --output dist/showWithDelay.min.js  src/showWithDelay.js",
+    "build:css": "cssnano src/showWithDelay.css dist/showWithDelay.min.css"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "cssnano-cli": "^1.0.5",
+    "local-web-server": "^1.2.6",
+    "uglify-js": "^2.8.7"
   }
 }

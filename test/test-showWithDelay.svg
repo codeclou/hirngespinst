@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Source+Sans+Pro:400,600" type="text/css"?>
-<?xml-stylesheet href="https://unpkg.com/hirngespinst@0.0.4/dist/showWithDelay.min.css" type="text/css"?>
+<?xml-stylesheet href="../dist/showWithDelay.css" type="text/css"?>
 <svg width="751px" height="529px" viewBox="0 0 751 529" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
     <title>animation</title>
@@ -54,5 +54,5 @@
         </g>
     </g>
 
-    <script src="https://unpkg.com/hirngespinst@0.0.4/dist/showWithDelay.min.js"></script>
+    <script src="../dist/showWithDelay.js"></script>
 </svg>
