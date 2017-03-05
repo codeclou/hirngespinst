@@ -6,6 +6,8 @@
 > Create svg infographics with ease
 
 
+![](https://unpkg.com/hirngespinst@0.0.3/demo/demo-showWithDelay-embed.svg)
+
 -----
 
 
