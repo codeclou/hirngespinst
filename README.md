@@ -97,7 +97,7 @@ Works in all modern browsers and was tested in the following versions
 
 ![](https://codeclou.github.io/hirngespinst/img/supported-browsers.svg)
 
- 
+Note: Internally CSS animations with `@keyframe` are used since SMIL browser-support will fade out.  
 
 
 -----
