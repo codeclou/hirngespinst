@@ -70,6 +70,21 @@ You can easily create such above graphic with [Sketch](https://www.sketchapp.com
 
 See a working [demo here](https://unpkg.com/hirngespinst@0.0.10/demo/demo-showWithDelay.svg)
 
+&nbsp;
+
+**Options**
+
+You can customize the options like so
+
+```js
+Hirngespinst.showWithDelay({
+    frameAnimationDelayInSeconds: 1,      // Delay until next frame is shown in seconds 
+    frameAnimationDurationInSeconds: 4,   // Duration for fade in of frame in seconds
+    framePauseBetweenFramesInSeconds: 2,  // Pause between frames in seconds 
+    frameAutoHide: true                   // will hide the frame after it was shown for a certain time
+});
+```
+
 -----
 
 
