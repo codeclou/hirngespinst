@@ -42,3 +42,7 @@ git push origin 0.0.15
 (3) Go to github releases and create release from tag.
 
 (4) Increase version in package.json.
+
+```
+git add . -A && git commit -m "version bump" && git push
+```

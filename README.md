@@ -6,7 +6,7 @@
 > Create svg infographics with ease
 
 
-![](https://unpkg.com/hirngespinst@0.0.5/demo/demo-showWithDelay-embed.svg)
+[![](./demo/demo-showWithDelay-embed.svg)](https://unpkg.com/hirngespinst@0.0.5/demo/demo-showWithDelay-embed.svg)
 
 
 -----
