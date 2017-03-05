@@ -6,7 +6,7 @@
 > Create svg infographics with ease
 
 
-[![](https://codeclou.github.io//hirngespinst/img/demo-showWithDelay--withAutoHide--embedded.svg)](https://unpkg.com/hirngespinst@0.0.7/demo/demo-showWithDelay.svg)
+[![](https://codeclou.github.io//hirngespinst/img/demo.gif)](https://unpkg.com/hirngespinst@0.0.7/demo/demo-showWithDelay.svg)
 
 
 -----
