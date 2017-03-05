@@ -88,7 +88,9 @@ that forbids the loading of the Hirngespinst JS and CSS then you need to either:
  * (1) Allow the unpgk.com Domain in your server's HTST settings
  * (2) Put the JS+CSS on the same server
  * (3) Embed the JS+CSS directly in the SVG
- 
+
+**:bangbang: Currently there is no way to get it to work with GitHub inside a Readme.md :bangbang:**
+
 This is how you would **embed the JS+CSS** ([demo-showWithDelay-embed.svg](./demo/demo-showWithDelay-embed.svg))
 
 ```xml
