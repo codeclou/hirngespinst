@@ -6,7 +6,7 @@
 > Create svg infographics with ease
 
 
-[![](https://codeclou.github.io//hirngespinst/img/demo.gif)](https://unpkg.com/hirngespinst@0.0.7/demo/demo-showWithDelay.svg)
+[![](https://codeclou.github.io//hirngespinst/img/demo.gif)](https://unpkg.com/hirngespinst@0.0.8/demo/demo-showWithDelay.svg)
 
 
 -----
@@ -34,14 +34,14 @@ Works in all modern browsers and was tested in versions:
 
 ### Usage
 
-**showWithDelay** - [DEMO](https://unpkg.com/hirngespinst@0.0.7/demo/demo-showWithDelay.svg)
+**showWithDelay** - [DEMO](https://unpkg.com/hirngespinst@0.0.8/demo/demo-showWithDelay.svg)
 
 > Shows the elements with id `frame-*` after 2 seconds  
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Source+Sans+Pro:400,600" type="text/css"?>
-<?xml-stylesheet href="https://unpkg.com/hirngespinst@0.0.7/dist/showWithDelay.min.css" type="text/css"?>
+<?xml-stylesheet href="https://unpkg.com/hirngespinst@0.0.8/dist/showWithDelay.min.css" type="text/css"?>
 <svg width="751px" height="529px" viewBox="0 0 751 529" version="1.1" 
     xmlns="http://www.w3.org/2000/svg" 
     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -58,8 +58,8 @@ Works in all modern browsers and was tested in versions:
         <rect id="hg-loading" fill="#BC00B9" x="0" y="512" width="1%" height="10"></rect>
     </g>
     <script type="text/javascript"
-            xlink:href="https://unpkg.com/hirngespinst@0.0.7/dist/showWithDelay.min.js"
-            href="https://unpkg.com/hirngespinst@0.0.7/dist/showWithDelay.min.js"
+            xlink:href="https://unpkg.com/hirngespinst@0.0.8/dist/showWithDelay.min.js"
+            href="https://unpkg.com/hirngespinst@0.0.8/dist/showWithDelay.min.js"
     />
     <script type="text/javascript">
         Hirngespinst.showWithDelay();
