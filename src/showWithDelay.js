@@ -64,8 +64,11 @@ var loadingBarUpdateCount = 0;
 const loadingBar = document.getElementById('hg-loading');
 if (loadingBar !== null) {
     const updateLoadingBar = function () {
-        loadingBarUpdateCount = loadingBarUpdateCount + 1;
-        loadingBar.setAttribute('width', loadingBarUpdateCount * 10);
+        if (loadingBarUpdateCount < overallAnimationTimeInSeconds) {
+            loadingBarUpdateCount = loadingBarUpdateCount + 1;
+            const percentage = loadingBarUpdateCount / overallAnimationTimeInSeconds * 100;
+            loadingBar.setAttribute('width', percentage + '%');
+        }
     };
     // updateLoadingBar every second
     setInterval(updateLoadingBar, 1000);

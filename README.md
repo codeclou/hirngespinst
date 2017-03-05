@@ -8,6 +8,24 @@
 
 ![](https://unpkg.com/hirngespinst@0.0.3/demo/demo-showWithDelay-embed.svg)
 
+
+-----
+
+
+&nbsp;
+
+
+### Browser Support
+
+Works in all modern browsers and was tested in versions:
+
+ * Apple Safari 10+
+ * Microsoft Internet Explorer 11
+ * Microsoft Edge
+ * Google Chrome 56+
+ * Mozilla Firefox 51+
+
+
 -----
 
 
