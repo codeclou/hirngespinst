@@ -6,8 +6,6 @@
 > Create svg infographics with ease
 
 
-![](./demo/demo-showWithDelay-embed.svg)
-
 -----
 
 
