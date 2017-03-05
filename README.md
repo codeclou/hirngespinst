@@ -3,7 +3,7 @@
 
 &nbsp;
 
-> Create svg infographics with ease
+> create self-contained »slideshow-like« SVG infographics with ease
 
 
 [![](https://codeclou.github.io//hirngespinst/img/demo.gif)](https://unpkg.com/hirngespinst@0.0.10/demo/demo-showWithDelay--withAutoHide.svg)
