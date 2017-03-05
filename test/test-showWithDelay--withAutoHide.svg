@@ -64,6 +64,8 @@
             href="../src/showWithDelay.js"
     />
     <script type="text/javascript">
-        Hirngespinst.showWithDelay();
+        Hirngespinst.showWithDelay({
+            frameAutoHide: true
+        });
     </script>
 </svg>

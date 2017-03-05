@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Source+Sans+Pro:400,600" type="text/css"?>
-<?xml-stylesheet href="https://unpkg.com/hirngespinst@0.0.5/dist/showWithDelay.min.css" type="text/css"?>
+<?xml-stylesheet href="https://unpkg.com/hirngespinst@0.0.7/dist/showWithDelay.min.css" type="text/css"?>
 <svg width="751px" height="529px" viewBox="0 0 751 529" version="1.1"
      xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
-    <title>animation</title>
+    <title>demo-showWithDelay.svg</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -30,25 +30,25 @@
             </text>
             <text id="Browser-redirect-to" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16" font-weight="normal" fill="#BC00B9">
                 <tspan x="24" y="66">Browser redirect to </tspan>
-                <tspan x="24" y="86" font-size="12">https://auth-server.seevee.io/github-login/prod-to-frontend-prod</tspan>
+                <tspan x="24" y="86" font-size="12">https://auth-server.foo.bar/github-login/prod</tspan>
             </text>
         </g>
         <g id="static" transform="translate(41.000000, 39.000000)">
             <rect id="Rectangle" fill="#555555" x="0" y="197" width="163" height="61"></rect>
-            <text id="seevee-pdf-converter" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16" font-weight="normal" fill="#FFFFFF">
-                <tspan x="10.06" y="231">seevee-pdf-converter</tspan>
+            <text id="pdf-converter" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16" font-weight="normal" fill="#FFFFFF">
+                <tspan x="10.06" y="231">pdf-converter</tspan>
             </text>
             <rect id="Rectangle" fill="#555555" x="253" y="197" width="163" height="61"></rect>
-            <text id="seevee-auth-server" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16" font-weight="normal" fill="#FFFFFF">
-                <tspan x="270.484" y="231">seevee-auth-server</tspan>
+            <text id="auth-server" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16" font-weight="normal" fill="#FFFFFF">
+                <tspan x="270.484" y="231">auth-server</tspan>
             </text>
             <rect id="Rectangle" fill="#555555" x="253" y="0" width="163" height="61"></rect>
-            <text id="seevee-frontend" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16" font-weight="normal" fill="#FFFFFF">
-                <tspan x="280.24" y="34">seevee-frontend</tspan>
+            <text id="frontend" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16" font-weight="normal" fill="#FFFFFF">
+                <tspan x="280.24" y="34">frontend</tspan>
             </text>
             <rect id="Rectangle" fill="#555555" x="499" y="197" width="163" height="61"></rect>
-            <text id="seevee-backend" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16" font-weight="normal" fill="#FFFFFF">
-                <tspan x="526.124" y="231">seevee-backend</tspan>
+            <text id="backend" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16" font-weight="normal" fill="#FFFFFF">
+                <tspan x="526.124" y="231">backend</tspan>
             </text>
             <rect id="Rectangle" fill="#555555" x="253" y="394" width="163" height="61"></rect>
             <text id="GitHub-API" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16" font-weight="normal" fill="#FFFFFF">
@@ -59,9 +59,11 @@
     </g>
     <!-- we use href and xlink:href even though it is deprecated since safari seems to only work with xlink:href -->
     <!-- SEE: https://developer.mozilla.org/de/docs/Web/SVG/Attribute/xlink:href -->
-    <script
-            xlink:href="https://unpkg.com/hirngespinst@0.0.5/dist/showWithDelay.min.js"
-            href="https://unpkg.com/hirngespinst@0.0.5/dist/showWithDelay.min.js"
-            type="text/javascript"
+    <script type="text/javascript"
+            xlink:href="https://unpkg.com/hirngespinst@0.0.7/dist/showWithDelay.min.js"
+            href="https://unpkg.com/hirngespinst@0.0.7/dist/showWithDelay.min.js"
     />
+    <script type="text/javascript">
+        Hirngespinst.showWithDelay();
+    </script>
 </svg>

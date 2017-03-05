@@ -3,18 +3,38 @@
  * Copyright (c) 2017 Bernhard Grünewaldt https://github.com/codeclou/hirngespinst
  */
 
-@keyframes showFrame {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
-}
 
+/* ALL FRAMES ARE HIDDEN ONLOAD */
 g[id^="frame-"] {
     opacity: 0;
 }
 
+
+/* SHOW FRAME */
+@keyframes showFrame {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
 .showFrameAnimation {
     opacity: 0;
     animation-name: showFrame;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+
+/* SHOW FRAME AND HIDE */
+@keyframes showFrameAndHide {
+    0%   { opacity: 0; }
+    10%  { opacity: 1; }
+    90%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+.showFrameAndHideAnimation {
+    opacity: 0;
+    animation-name: showFrameAndHide;
     animation-iteration-count: 1;
     animation-direction: alternate;
     animation-timing-function: ease-out;

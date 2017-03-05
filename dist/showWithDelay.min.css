@@ -1,4 +1,4 @@
 /*!
  * @license MIT
  * Copyright (c) 2017 Bernhard Grünewaldt https://github.com/codeclou/hirngespinst
- */@keyframes a{0%{opacity:0}to{opacity:1}}g[id^=frame-]{opacity:0}.showFrameAnimation{opacity:0;animation-name:a;animation-iteration-count:1;animation-direction:alternate;animation-timing-function:ease-out;animation-fill-mode:forwards}
+ */g[id^=frame-]{opacity:0}@keyframes a{0%{opacity:0}to{opacity:1}}.showFrameAnimation{opacity:0;animation-name:a;animation-iteration-count:1;animation-direction:alternate;animation-timing-function:ease-out;animation-fill-mode:forwards}@keyframes b{0%{opacity:0}10%{opacity:1}90%{opacity:1}to{opacity:0}}.showFrameAndHideAnimation{opacity:0;animation-name:b;animation-iteration-count:1;animation-direction:alternate;animation-timing-function:ease-out;animation-fill-mode:forwards}
