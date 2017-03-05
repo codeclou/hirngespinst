@@ -15,48 +15,38 @@
 &nbsp;
 
 
-### Browser Support
+### Usage with Sketch
 
-Works in all modern browsers and was tested in versions:
+You can easily create such above graphic with [Sketch](https://www.sketchapp.com/) like so:
 
- * Apple Safari 10+
- * Microsoft Internet Explorer 11
- * Microsoft Edge
- * Google Chrome 56+
- * Mozilla Firefox 51+
+**(1)** Download the example [`demo-showWithDelay.sketch`](./demo/demo-showWithDelay.sketch)
 
+**(2)** Create groups with names from `frame-01` to `frame-99` which get shown after each other.
+ 
+![](https://codeclou.github.io/hirngespinst/img/01-sketch.png)
 
------
+**(3)** Create a rect with name `gh-loading` placed in the bottom left. This rect will then be expanded to 100% width as an animation.
+ 
+![](https://codeclou.github.io/hirngespinst/img/02-sketch.png)
 
+**(4)** Insert a slice and export as SVG.
+ 
+![](https://codeclou.github.io/hirngespinst/img/04-sketch.png)
 
-&nbsp;
-
-
-### Usage
-
-**showWithDelay** - [DEMO](https://unpkg.com/hirngespinst@0.0.8/demo/demo-showWithDelay.svg)
-
-> Shows the elements with id `frame-*` after 2 seconds  
+**(5)** Open the SVG in an Editor like the [awesome Atom](https://atom.io/) and add the following.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Source+Sans+Pro:400,600" type="text/css"?>
+<!-- ADD STYLESHEET -->
 <?xml-stylesheet href="https://unpkg.com/hirngespinst@0.0.8/dist/showWithDelay.min.css" type="text/css"?>
 <svg width="751px" height="529px" viewBox="0 0 751 529" version="1.1" 
     xmlns="http://www.w3.org/2000/svg" 
     xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="frame-02" transform="translate(365.000000, 310.000000)" style="animation-delay: 4s; opacity: 0;" class="showFrameAnimation">
-            <path d="M9.5,0.5 L9.5,109.5" id="Line" stroke="#BC00B9" stroke-width="3" stroke-linecap="square"/>
-        </g>
-        <g id="frame-01" transform="translate(364.000000, 113.000000)" style="animation-delay: 2s; opacity: 0;" class="showFrameAnimation">
-            <path d="M9.5,0.5 L9.5,109.5" id="Line" stroke="#BC00B9" stroke-width="3" stroke-linecap="square"/>
-            </g>
-        <g id="static" transform="translate(41.000000, 39.000000)">
-            <rect id="Rectangle" fill="#555555" x="0" y="197" width="163" height="61"/>
-        </g>
-        <rect id="hg-loading" fill="#BC00B9" x="0" y="512" width="1%" height="10"></rect>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      ...
     </g>
+    <!-- ADD JAVASCRIPT AT THE BOTTOM -->
     <script type="text/javascript"
             xlink:href="https://unpkg.com/hirngespinst@0.0.8/dist/showWithDelay.min.js"
             href="https://unpkg.com/hirngespinst@0.0.8/dist/showWithDelay.min.js"
@@ -67,9 +57,23 @@ Works in all modern browsers and was tested in versions:
 </svg>
 ```
 
- * Include the two `xml-stylesheets` in the head
- * Include the `<script>` before the closing `</svg>`
- * Use `Roboto Mono` and `Source Sans Pro` for your `<text>` elements
+See a working [demo here](https://unpkg.com/hirngespinst@0.0.8/demo/demo-showWithDelay.svg)
+
+-----
+
+
+&nbsp;
+
+
+### Browser Support
+
+Works in all modern browsers and was tested in versions:
+
+ * Apple Safari 10+
+ * Microsoft Internet Explorer 11
+ * Microsoft Edge
+ * Google Chrome 56+
+ * Mozilla Firefox 51+
 
 
 -----
