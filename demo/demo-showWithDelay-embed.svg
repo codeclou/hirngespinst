@@ -3,35 +3,20 @@
 <svg width="751px" height="529px" viewBox="0 0 751 529" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <style>
     /* <![CDATA[ */
-      /**
-       * Licensed under MIT License
-       * Copyright (c) 2017 Bernhard GrĂźnewaldt
-       */
-
-      @keyframes showFrame {
-          0%   { opacity: 0; }
-          100% { opacity: 1; }
-      }
-
-      .showFrameAnimation {
-          opacity: 0;
-          animation-name: showFrame;
-          animation-duration: 4s;
-          animation-iteration-count: 1;
-          animation-direction: alternate;
-          animation-timing-function: ease-out;
-          animation-fill-mode: forwards;
-      }
+        /*!
+         * @license MIT
+         * Copyright (c) 2017 Bernhard Grünewaldt https://github.com/codeclou/hirngespinst
+         */@keyframes a{0%{opacity:0}to{opacity:1}}g[id^=frame-]{opacity:0}.showFrameAnimation{opacity:0;animation-name:a;animation-iteration-count:1;animation-direction:alternate;animation-timing-function:ease-out;animation-fill-mode:forwards}
     /* ]]> */
     </style>
     <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
     <title>animation</title>
     <desc>Created with Sketch.</desc>
     <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="frame-02" transform="translate(365.000000, 310.000000)" style="animation-delay: 4s; opacity: 0;" class="showFrameAnimation">
-            <path d="M9.5,0.5 L9.5,109.5" id="Line" stroke="#BC00B9" stroke-width="3" stroke-linecap="square"/>
-            <polygon id="Triangle" fill="#BC00B9" transform="translate(9.000000, 105.000000) scale(1, -1) translate(-9.000000, -105.000000) " points="9 96 18 114 0 114"/>
-            <circle id="Oval" fill="#BC00B9" cx="37" cy="30" r="14"/>
+        <g id="frame-02" transform="translate(365.000000, 310.000000)">
+            <path d="M9.5,0.5 L9.5,109.5" id="Line" stroke="#BC00B9" stroke-width="3" stroke-linecap="square"></path>
+            <polygon id="Triangle" fill="#BC00B9" transform="translate(9.000000, 105.000000) scale(1, -1) translate(-9.000000, -105.000000) " points="9 96 18 114 0 114"></polygon>
+            <circle id="Oval" fill="#BC00B9" cx="37" cy="30" r="14"></circle>
             <text id="2" font-family="SourceSansPro-Bold, Source Sans Pro" font-size="16" font-weight="bold" fill="#FFFFFF">
                 <tspan x="33.276" y="34">2</tspan>
             </text>
@@ -40,79 +25,49 @@
                 <tspan x="24" y="86" font-size="12">https://api.github.com/….</tspan>
             </text>
         </g>
-        <g id="frame-01" transform="translate(364.000000, 113.000000)" style="animation-delay: 2s; opacity: 0;" class="showFrameAnimation">
-            <path d="M9.5,0.5 L9.5,109.5" id="Line" stroke="#BC00B9" stroke-width="3" stroke-linecap="square"/>
-            <polygon id="Triangle" fill="#BC00B9" transform="translate(9.000000, 105.000000) scale(1, -1) translate(-9.000000, -105.000000) " points="9 96 18 114 0 114"/>
-            <circle id="Oval" fill="#BC00B9" cx="37" cy="30" r="14"/>
+        <g id="frame-01" transform="translate(364.000000, 113.000000)">
+            <path d="M9.5,0.5 L9.5,109.5" id="Line" stroke="#BC00B9" stroke-width="3" stroke-linecap="square"></path>
+            <polygon id="Triangle" fill="#BC00B9" transform="translate(9.000000, 105.000000) scale(1, -1) translate(-9.000000, -105.000000) " points="9 96 18 114 0 114"></polygon>
+            <circle id="Oval" fill="#BC00B9" cx="37" cy="30" r="14"></circle>
             <text id="1" font-family="SourceSansPro-Bold, Source Sans Pro" font-size="16" font-weight="bold" fill="#FFFFFF">
                 <tspan x="33.276" y="34">1</tspan>
             </text>
             <text id="Browser-redirect-to" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16" font-weight="normal" fill="#BC00B9">
                 <tspan x="24" y="66">Browser redirect to </tspan>
-                <tspan x="24" y="86" font-size="12">https://auth-server.foo.bar/github-login/prod</tspan>
+                <tspan x="24" y="86" font-size="12">https://auth-server.seevee.io/github-login/prod-to-frontend-prod</tspan>
             </text>
         </g>
         <g id="static" transform="translate(41.000000, 39.000000)">
-            <rect id="Rectangle" fill="#555555" x="0" y="197" width="163" height="61"/>
+            <rect id="Rectangle" fill="#555555" x="0" y="197" width="163" height="61"></rect>
             <text id="seevee-pdf-converter" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16" font-weight="normal" fill="#FFFFFF">
                 <tspan x="10.06" y="231">seevee-pdf-converter</tspan>
             </text>
-            <rect id="Rectangle" fill="#555555" x="253" y="197" width="163" height="61"/>
+            <rect id="Rectangle" fill="#555555" x="253" y="197" width="163" height="61"></rect>
             <text id="seevee-auth-server" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16" font-weight="normal" fill="#FFFFFF">
                 <tspan x="270.484" y="231">seevee-auth-server</tspan>
             </text>
-            <rect id="Rectangle" fill="#555555" x="253" y="0" width="163" height="61"/>
+            <rect id="Rectangle" fill="#555555" x="253" y="0" width="163" height="61"></rect>
             <text id="seevee-frontend" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16" font-weight="normal" fill="#FFFFFF">
                 <tspan x="280.24" y="34">seevee-frontend</tspan>
             </text>
-            <rect id="Rectangle" fill="#555555" x="499" y="197" width="163" height="61"/>
+            <rect id="Rectangle" fill="#555555" x="499" y="197" width="163" height="61"></rect>
             <text id="seevee-backend" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16" font-weight="normal" fill="#FFFFFF">
                 <tspan x="526.124" y="231">seevee-backend</tspan>
             </text>
-            <rect id="Rectangle" fill="#555555" x="253" y="394" width="163" height="61"/>
+            <rect id="Rectangle" fill="#555555" x="253" y="394" width="163" height="61"></rect>
             <text id="GitHub-API" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16" font-weight="normal" fill="#FFFFFF">
                 <tspan x="298.204" y="428">GitHub API</tspan>
             </text>
         </g>
+        <rect id="hg-loading" fill="#BC00B9" x="0" y="512" width="1%" height="10"></rect>
     </g>
     <script type="text/javascript">
       // <![CDATA[
-        /**
-         * Licensed under MIT License
-         * Copyright (c) 2017 Bernhard Grünewaldt
+        /*!
+         * @license MIT
+         * Copyright (c) 2017 Bernhard Grünewaldt https://github.com/codeclou/hirngespinst
          */
-
-        //
-        // SHOW ALL SVG-Elements with 'frame-n' ID like 'frame-01, frame-02 ... frame-99'
-        // WITH A DELAY OF 2 SECONDS
-        //
-        const getElementsStartsWithId = function(id) {
-            var children = document.getElementsByTagName('*');
-            var elements = [], child;
-            for (var i = 0, length = children.length; i < length; i++) {
-                child = children[i];
-                if (child.id.substr(0, id.length) == id)
-                    elements.push(child);
-            }
-            return elements;
-        };
-        const getFrameIdByNumber = function(number) {
-            if (number < 10) {
-                return 'frame-0' + number;
-            }
-            return 'frame-' + number;
-        };
-        const frames = getElementsStartsWithId('frame-');
-        var amountFrames = 0;
-        if (frames !== undefined && frames !== null && frames.length > 0) {
-            amountFrames = frames.length;
-        }
-        for (var i=1;i<amountFrames+1;i++) {
-            const frame = document.getElementById(getFrameIdByNumber(i));
-            frame.style["animation-delay"] = (2*i) + 's';
-            frame.style["opacity"] = 0;
-            frame.setAttribute('class', 'showFrameAnimation');
-        }
-     // ]]>
+        const frameAnimationDelayInSeconds=1,frameAnimationDurationInSeconds=2,framePauseBetweenFramesInSeconds=2,getElementsStartsWithId=function(n){for(var e,t=document.getElementsByTagName("*"),a=[],i=0,o=t.length;i<o;i++)e=t[i],e.id.substr(0,n.length)==n&&a.push(e);return a},getFrameIdByNumber=function(n){return n<10?"frame-0"+n:"frame-"+n},frames=getElementsStartsWithId("frame-");var amountFrames=0;void 0!==frames&&null!==frames&&frames.length>0&&(amountFrames=frames.length);var overallAnimationDurationInSeconds=5*amountFrames;const initializeFrameAnimations=function(){console.log("   initializeFrameAnimations()");for(var n=1;n<amountFrames+1;n++){var e=2;1===n&&(e=0);const t=document.getElementById(getFrameIdByNumber(n));t.removeAttribute("class"),t.removeAttribute("style");const a=(e+1)*n;setTimeout(function(n,e,t){n.style["animation-delay"]=e+"s",n.style["animation-duration"]=t+"s",n.style.opacity=0,n.setAttribute("class","showFrameAnimation")},300,t,a,2)}};var loadingBarUpdateCount=0,loadingBarIntervalReference=null;const initializeLoadingBarAnimation=function(){console.log("   initializeLoadingBarAnimation()");const n=document.getElementById("hg-loading");if(null!==n){loadingBarUpdateCount=0,n.setAttribute("width","0%"),void 0!==loadingBarIntervalReference&&null!==loadingBarIntervalReference&&(clearInterval(loadingBarIntervalReference),loadingBarIntervalReference=null);const e=function(){if(loadingBarUpdateCount<=overallAnimationDurationInSeconds){loadingBarUpdateCount+=1;const e=loadingBarUpdateCount/overallAnimationDurationInSeconds*100;n.setAttribute("width",e+"%")}};loadingBarIntervalReference=setInterval(e,1e3)}};console.log("HIRNGESPINST started with overallAnimationDurationInSeconds",overallAnimationDurationInSeconds);const init=function(){console.log("init()"),initializeFrameAnimations(),initializeLoadingBarAnimation()};init(),setInterval(init,1e3*overallAnimationDurationInSeconds);
+      // ]]>
     </script>
 </svg>

@@ -9,14 +9,13 @@
 const frameAnimationDelayInSeconds = 1;
 const frameAnimationDurationInSeconds = 2;
 const framePauseBetweenFramesInSeconds = 2;
-var overallAnimationTimeInSeconds = 4;
+
 
 //
-// SHOW FRAMES LOGIC
-// =================
+// CALCULATE OVERALL ANIMATION DURATION
+// ====================================
 //
-// SHOW ALL SVG-Elements with 'frame-n' ID like 'frame-01, frame-02 ... frame-99'
-// WITH A DELAY OF n SECONDS
+// based on SVG-Elements with 'frame-n' id like 'frame-01, frame-02 ... frame-99'
 //
 const getElementsStartsWithId = function(id) {
     var children = document.getElementsByTagName('*');
@@ -34,23 +33,49 @@ const getFrameIdByNumber = function(number) {
     }
     return 'frame-' + number;
 };
+//
+// CALCULATE AMOUNT OF FRAMES
+//
 const frames = getElementsStartsWithId('frame-');
 var amountFrames = 0;
 if (frames !== undefined && frames !== null && frames.length > 0) {
     amountFrames = frames.length;
 }
-for (var i=1;i<amountFrames+1;i++) {
-    var framePauseBetweenFramesInSecondsLoop = framePauseBetweenFramesInSeconds;
-    if (i === 1) {
-        framePauseBetweenFramesInSecondsLoop = 0;
+//
+// CALCULATE OVERALL ANIMATION DURATION
+//
+var overallAnimationDurationInSeconds =
+    (
+        frameAnimationDelayInSeconds +
+        frameAnimationDurationInSeconds +
+        framePauseBetweenFramesInSeconds
+    ) * amountFrames;
+
+
+//
+// SHOW AND HIDE FRAME LOGIC
+//
+const initializeFrameAnimations = function() {
+    console.log('   initializeFrameAnimations()');
+    for (var i = 1; i < amountFrames + 1; i++) {
+        var framePauseBetweenFramesInSecondsLoop = framePauseBetweenFramesInSeconds;
+        if (i === 1) {
+            framePauseBetweenFramesInSecondsLoop = 0;
+        }
+        const frame = document.getElementById(getFrameIdByNumber(i));
+        frame.removeAttribute('class');
+        frame.removeAttribute('style');
+        const delay = ((framePauseBetweenFramesInSecondsLoop + frameAnimationDelayInSeconds) * i);
+        // We need a timeout since the SVG DOM does not seem to get updated otherwise
+        setTimeout(function(frame, delay, frameAnimationDurationInSeconds){
+            frame.style["animation-delay"] =  delay + 's';
+            frame.style["animation-duration"] = frameAnimationDurationInSeconds + 's';
+            frame.style["opacity"] = 0;
+            frame.setAttribute('class', 'showFrameAnimation');
+        }, 300, frame, delay, frameAnimationDurationInSeconds);
     }
-    const frame = document.getElementById(getFrameIdByNumber(i));
-    frame.style["animation-delay"] = ((framePauseBetweenFramesInSecondsLoop + frameAnimationDelayInSeconds) * i) + 's';
-    frame.style["animation-duration"] = frameAnimationDurationInSeconds + 's';
-    frame.style["opacity"] = 0;
-    frame.setAttribute('class', 'showFrameAnimation');
-    overallAnimationTimeInSeconds = overallAnimationTimeInSeconds + ((framePauseBetweenFramesInSecondsLoop + frameAnimationDelayInSeconds) * i) + frameAnimationDurationInSeconds;
-}
+};
+
 
 //
 // LOADING BAR LOGIC
@@ -61,22 +86,39 @@ for (var i=1;i<amountFrames+1;i++) {
 //       does not work at the time of writing this code).
 //
 var loadingBarUpdateCount = 0;
-const loadingBar = document.getElementById('hg-loading');
-if (loadingBar !== null) {
-    const updateLoadingBar = function () {
-        if (loadingBarUpdateCount < overallAnimationTimeInSeconds) {
-            loadingBarUpdateCount = loadingBarUpdateCount + 1;
-            const percentage = loadingBarUpdateCount / overallAnimationTimeInSeconds * 100;
-            loadingBar.setAttribute('width', percentage + '%');
+var loadingBarIntervalReference = null;
+const initializeLoadingBarAnimation = function() {
+    console.log('   initializeLoadingBarAnimation()');
+    const loadingBar = document.getElementById('hg-loading');
+    if (loadingBar !== null) {
+        loadingBarUpdateCount = 0;
+        loadingBar.setAttribute('width', '0%');
+        if (loadingBarIntervalReference !== undefined && loadingBarIntervalReference !== null) {
+            clearInterval(loadingBarIntervalReference);
+            loadingBarIntervalReference = null;
         }
-    };
-    // updateLoadingBar every second
-    setInterval(updateLoadingBar, 1000);
-}
+        const updateLoadingBar = function () {
+            if (loadingBarUpdateCount <= overallAnimationDurationInSeconds) {
+                loadingBarUpdateCount = loadingBarUpdateCount + 1;
+                const percentage = loadingBarUpdateCount / overallAnimationDurationInSeconds * 100;
+                loadingBar.setAttribute('width', percentage + '%');
+            }
+        };
+        // updateLoadingBar every second
+        loadingBarIntervalReference = setInterval(updateLoadingBar, 1000);
+    }
+};
 
 
 //
 // INIT
 //
-console.log('init hirngespinst with overallAnimationTimeInSeconds', overallAnimationTimeInSeconds);
+console.log('HIRNGESPINST started with overallAnimationDurationInSeconds', overallAnimationDurationInSeconds);
+const init = function() {
+    console.log('init()');
+    initializeFrameAnimations();
+    initializeLoadingBarAnimation();
+};
+init();
+setInterval(init, overallAnimationDurationInSeconds * 1000);
 

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Source+Sans+Pro:400,600" type="text/css"?>
 <?xml-stylesheet href="../src/showWithDelay.css" type="text/css"?>
-<svg width="751px" height="529px" viewBox="0 0 751 529" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="751px" height="529px" viewBox="0 0 751 529" version="1.1"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
     <title>animation</title>
     <desc>Created with Sketch.</desc>
@@ -53,7 +55,7 @@
                 <tspan x="298.204" y="428">GitHub API</tspan>
             </text>
         </g>
-        <rect id="hg-loading" fill="#BC00B9" x="0" y="512" width="1%" height="17"></rect>
+        <rect id="hg-loading" fill="#BC00B9" x="0" y="512" width="1%" height="10"></rect>
     </g>
     <!-- we use href and xlink:href even though it is deprecated since safari seems to only work with xlink:href -->
     <!-- SEE: https://developer.mozilla.org/de/docs/Web/SVG/Attribute/xlink:href -->

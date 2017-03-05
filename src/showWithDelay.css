@@ -8,6 +8,10 @@
     100% { opacity: 1; }
 }
 
+g[id^="frame-"] {
+    opacity: 0;
+}
+
 .showFrameAnimation {
     opacity: 0;
     animation-name: showFrame;
@@ -15,26 +19,4 @@
     animation-direction: alternate;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
-}
-
-#hg-loading {
-    transition-property:width;
-    -moz-transition-property: width; /* Firefox 4 */
-    -webkit-transition-property:width; /* Safari and Chrome */
-    -o-transition-property:width; /* Opera */
-
-    transition-duration: 1s;
-    -moz-transition-duration: 1s; /* Firefox 4 */
-    -webkit-transition-duration: 1s; /* Safari and Chrome */
-    -o-transition-duration: 1s; /* Opera */
-
-    transition-timing-function: linear;
-    -moz-transition-timing-function: linear; /* Firefox 4 */
-    -webkit-transition-timing-function: linear; /* Safari and Chrome */
-    -o-transition-timing-function: linear; /* Opera */
-
-    transition-delay: .5s;
-    -moz-transition-delay: .5s; /* Firefox 4 */
-    -webkit-transition-delay: .5s; /* Safari and Chrome */
-    -o-transition-delay: .5s; /* Opera */
 }
