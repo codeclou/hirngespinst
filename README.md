@@ -6,7 +6,7 @@
 > Create svg infographics with ease
 
 
-[![](https://codeclou.github.io//hirngespinst/img/demo.gif)](demo-showWithDelay--withAutoHide.svg)
+[![](https://codeclou.github.io//hirngespinst/img/demo.gif)](https://unpkg.com/hirngespinst@0.0.8/demo/demo-showWithDelay--withAutoHide.svg)
 
 
 -----
@@ -78,13 +78,11 @@ See a working [demo here](https://unpkg.com/hirngespinst@0.0.8/demo/demo-showWit
 
 ### Browser Support
 
-Works in all modern browsers and was tested in versions:
+Works in all modern browsers and was tested in the following versions
 
- * Apple Safari 10+
- * Microsoft Internet Explorer 11
- * Microsoft Edge
- * Google Chrome 56+
- * Mozilla Firefox 51+
+![](https://codeclou.github.io/hirngespinst/img/supported-browsers.svg)
+
+ 
 
 
 -----
