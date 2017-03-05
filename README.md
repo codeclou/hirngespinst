@@ -68,6 +68,9 @@ You can easily create such above graphic with [Sketch](https://www.sketchapp.com
 </svg>
 ```
 
+&nbsp;
+
+
 **(6)** Now use your SVG like so in your website
 
 ```html
