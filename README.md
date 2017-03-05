@@ -99,5 +99,5 @@ This is how you would **embed the JS+CSS** ([demo-showWithDelay-embed.svg](./dem
 
 ### License
 
-[MIT](./LICENSE) © [Bernhard Grünewaldt](@clouless)
+[MIT](./LICENSE) © [Bernhard Grünewaldt](https://github.com/clouless)
   
