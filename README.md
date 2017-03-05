@@ -6,7 +6,7 @@
 > Create svg infographics with ease
 
 
-[![](https://unpkg.com/hirngespinst@0.0.5/demo/demo-showWithDelay-embed.svg)](https://unpkg.com/hirngespinst@0.0.5/demo/demo-showWithDelay-embed.svg)
+[![](https://unpkg.com/hirngespinst@0.0.7/demo/demo-showWithDelay-embed.svg)](https://unpkg.com/hirngespinst@0.0.7/demo/demo-showWithDelay-embed.svg)
 
 
 -----
@@ -34,7 +34,7 @@ Works in all modern browsers and was tested in versions:
 
 ### Usage
 
-**showWithDelay** - [DEMO](https://unpkg.com/hirngespinst@0.0.5/demo/demo-showWithDelay.svg)
+**showWithDelay** - [DEMO](https://unpkg.com/hirngespinst@0.0.7/demo/demo-showWithDelay.svg)
 
 > Shows the elements with id `frame-*` after 2 seconds  
 

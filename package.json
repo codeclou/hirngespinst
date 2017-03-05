@@ -12,7 +12,7 @@
     "build": "npm run build:pre && npm run build:cp && npm run build:js && npm run build:css",
     "build:pre": "rm -f dist/*",
     "build:cp": "cp src/* dist/",
-    "build:js": "uglifyjs  --compress --mangle --reserved 'Hirngespinst' --comments --output dist/showWithDelay.min.js  src/showWithDelay.js",
+    "build:js": "uglifyjs  --compress --mangle --reserved 'Hirngespinst,hirngespinstGlobalState' --comments --output dist/showWithDelay.min.js  src/showWithDelay.js",
     "build:css": "cssnano src/showWithDelay.css dist/showWithDelay.min.css"
   },
   "dependencies": {},
