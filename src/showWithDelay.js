@@ -128,13 +128,24 @@ var hirngespinst__initialize = function(config) {
 };
 var Hirngespinst = {
     showWithDelay: function (userConfig) {
-        var config = Object.assign({}, hirngespinstConfigDefault);
+        // DO NOT USE Object.assign() to support IE11 ...
+        var config = hirngespinstConfigDefault;
         if (userConfig !== undefined && userConfig !== null) {
-            config = Object.assign({}, hirngespinstConfigDefault, userConfig);
+            if (userConfig.frameAnimationDelayInSeconds !== undefined) {
+                config.frameAnimationDelayInSeconds = userConfig.frameAnimationDelayInSeconds;
+            }
+            if (userConfig.frameAnimationDurationInSeconds !== undefined) {
+                config.frameAnimationDurationInSeconds = userConfig.frameAnimationDurationInSeconds;
+            }
+            if (userConfig.framePauseBetweenFramesInSeconds !== undefined) {
+                config.framePauseBetweenFramesInSeconds = userConfig.framePauseBetweenFramesInSeconds;
+            }
+            if (userConfig.frameAutoHide !== undefined) {
+                config.frameAutoHide = userConfig.frameAutoHide;
+            }
         }
         hirngespinst__preInitialize(config);
         hirngespinst__initialize(config);
         setInterval(hirngespinst__initialize, hirngespinstGlobalState.overallAnimationDurationInSeconds * 1000, config);
     }
-}
-
+};
