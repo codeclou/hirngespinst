@@ -6,7 +6,7 @@
 > create self-contained »slideshow-like« SVG infographics with ease
 
 
-[![](https://codeclou.github.io//hirngespinst/img/demo.gif)](https://unpkg.com/hirngespinst@0.0.10/demo/demo-showWithDelay--withAutoHide.svg)
+[![](https://codeclou.github.io//hirngespinst/img/demo.gif)](https://unpkg.com/hirngespinst@0.0.11/demo/demo-showWithDelay--withAutoHide.svg)
 
 
 -----
@@ -49,7 +49,7 @@ You can easily create such above graphic with [Sketch](https://www.sketchapp.com
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-stylesheet href="https://unpkg.com/hirngespinst@0.0.10/dist/showWithDelay.min.css" type="text/css"?>
+<?xml-stylesheet href="https://unpkg.com/hirngespinst@0.0.11/dist/showWithDelay.min.css" type="text/css"?>
 <svg width="751px" height="529px" viewBox="0 0 751 529" version="1.1" 
     xmlns="http://www.w3.org/2000/svg" 
     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -59,8 +59,8 @@ You can easily create such above graphic with [Sketch](https://www.sketchapp.com
       ...
     </g>
     <script type="text/javascript"
-            xlink:href="https://unpkg.com/hirngespinst@0.0.10/dist/showWithDelay.min.js"
-            href="https://unpkg.com/hirngespinst@0.0.10/dist/showWithDelay.min.js"
+            xlink:href="https://unpkg.com/hirngespinst@0.0.11/dist/showWithDelay.min.js"
+            href="https://unpkg.com/hirngespinst@0.0.11/dist/showWithDelay.min.js"
     />
     <script type="text/javascript">
         Hirngespinst.showWithDelay();
@@ -81,7 +81,7 @@ You can easily create such above graphic with [Sketch](https://www.sketchapp.com
 
 **Demo**
 
-See a working [demo here](https://unpkg.com/hirngespinst@0.0.10/demo/demo-showWithDelay.svg)
+See a working [demo here](https://unpkg.com/hirngespinst@0.0.11/demo/demo-showWithDelay.svg)
 
 &nbsp;
 
@@ -91,8 +91,7 @@ You can customize the options like so
 
 ```js
 Hirngespinst.showWithDelay({
-    frameAnimationDelayInSeconds: 1,      // Delay until next frame is shown in seconds 
-    frameAnimationDurationInSeconds: 4,   // Duration for fade in of frame in seconds
+    frameAnimationDurationInSeconds: 4,   // Duration how long a frame is shown
     framePauseBetweenFramesInSeconds: 2,  // Pause between frames in seconds 
     frameAutoHide: true                   // will hide the frame after it was shown for a certain time
 });
