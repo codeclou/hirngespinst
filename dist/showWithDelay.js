@@ -3,13 +3,24 @@
  * Copyright (c) 2017 Bernhard Grünewaldt https://github.com/codeclou/hirngespinst
  */
 
+var hirngespinst__fixTspanLeadingWhitespace = function() {
+    var children = document.getElementsByTagName('tspan');
+    var child;
+    var widthOfOneWhiteSpaceInPixels = 5;
+    for (var i = 0, length = children.length; i < length; i++) {
+        child = children[i];
+        // since "white-space: pre" on "tspan" does not work in every browser as expected
+        // Replace each leading whitespace with 5 px
+        var text = child.textContent;
+        if (text !== undefined && text !== null && /^\s/.test(text)) {
+            var leadingWhitespace = text.replace(/^(\s*).*$/, '$1');
+            var xOffset = parseInt(child.getAttribute('x'), 10) + leadingWhitespace.length * widthOfOneWhiteSpaceInPixels;
+            child.setAttribute('x', xOffset);
+            child.textContent = text.substring(leadingWhitespace.length, text.length);
+        }
 
-//
-// CALCULATE OVERALL ANIMATION DURATION
-// ====================================
-//
-// based on SVG-Elements with 'frame-n' id like 'frame-01, frame-02 ... frame-99'
-//
+    }
+};
 var hirngespinst__getElementsStartsWithId = function(id) {
     var children = document.getElementsByTagName('*');
     var elements = [];
@@ -29,24 +40,16 @@ var hirngespinst__getFrameIdByNumber = function(number) {
     return 'frame-' + number;
 };
 
-
-
-//
-// SHOW AND HIDE FRAME LOGIC
-//
 var hirngespinst__initializeFrameAnimations = function(config) {
     for (var i = 1; i < hirngespinstGlobalState.amountFrames + 1; i++) {
-        var framePauseBetweenFramesInSecondsLoop = config.framePauseBetweenFramesInSeconds;
-        if (i === 1) {
-            framePauseBetweenFramesInSecondsLoop = 0;
-        }
         var frame = document.getElementById(hirngespinst__getFrameIdByNumber(i));
         frame.removeAttribute('class');
         frame.removeAttribute('style');
-        var delay = ((framePauseBetweenFramesInSecondsLoop + config.frameAnimationDelayInSeconds) * i);
+        var delay = ((config.framePauseBetweenFramesInSeconds + config.frameAnimationDurationInSeconds) * (i-1));
         // We need a timeout since the SVG DOM does not seem to get updated otherwise
         setTimeout(function(frame, delay, frameAnimationDurationInSeconds){
             frame.style["animation-delay"] =  delay + 's';
+            console.log(frameAnimationDurationInSeconds);
             frame.style["animation-duration"] = frameAnimationDurationInSeconds + 's';
             frame.style["opacity"] = 0;
             var animationClass = 'showFrameAnimation';
@@ -97,7 +100,6 @@ var hirngespinst__preInitialize = function(hirngespinstConfig) {
         hirngespinstGlobalState.amountFrames = hirngespinstFrames.length;
     }
     hirngespinstGlobalState.overallAnimationDurationInSeconds = (
-            hirngespinstConfig.frameAnimationDelayInSeconds +
             hirngespinstConfig.frameAnimationDurationInSeconds +
             hirngespinstConfig.framePauseBetweenFramesInSeconds
         ) * (hirngespinstGlobalState.amountFrames);
@@ -107,9 +109,8 @@ var hirngespinst__preInitialize = function(hirngespinstConfig) {
 // DEFS AND GLOBAL VAES
 //
 var hirngespinstConfigDefault = {
-    frameAnimationDelayInSeconds: 1,
-    frameAnimationDurationInSeconds: 4,
-    framePauseBetweenFramesInSeconds: 2,
+    frameAnimationDurationInSeconds: 8,
+    framePauseBetweenFramesInSeconds: 1,
     frameAutoHide: false
 };
 var hirngespinstGlobalState = {
@@ -131,9 +132,6 @@ var Hirngespinst = {
         // DO NOT USE Object.assign() to support IE11 ...
         var config = hirngespinstConfigDefault;
         if (userConfig !== undefined && userConfig !== null) {
-            if (userConfig.frameAnimationDelayInSeconds !== undefined) {
-                config.frameAnimationDelayInSeconds = userConfig.frameAnimationDelayInSeconds;
-            }
             if (userConfig.frameAnimationDurationInSeconds !== undefined) {
                 config.frameAnimationDurationInSeconds = userConfig.frameAnimationDurationInSeconds;
             }
@@ -144,6 +142,7 @@ var Hirngespinst = {
                 config.frameAutoHide = userConfig.frameAutoHide;
             }
         }
+        hirngespinst__fixTspanLeadingWhitespace();
         hirngespinst__preInitialize(config);
         hirngespinst__initialize(config);
         setInterval(hirngespinst__initialize, hirngespinstGlobalState.overallAnimationDurationInSeconds * 1000, config);

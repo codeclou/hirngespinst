@@ -9,10 +9,20 @@ g[id^="frame-"] {
     opacity: 0;
 }
 
+/* this does not work in all browsers to preserve whitespace as expected!
+text {
+    white-space: pre;
+}
+*/
+
+#hg-loading {
+    transition: width 0.5s;
+}
 
 /* SHOW FRAME */
 @keyframes showFrame {
     0%   { opacity: 0; }
+    10%  { opacity: 1; }
     100% { opacity: 1; }
 }
 .showFrameAnimation {
@@ -28,8 +38,8 @@ g[id^="frame-"] {
 /* SHOW FRAME AND HIDE */
 @keyframes showFrameAndHide {
     0%   { opacity: 0; }
-    10%  { opacity: 1; }
-    90%  { opacity: 1; }
+    5%  { opacity: 1; }
+    95%  { opacity: 1; }
     100% { opacity: 0; }
 }
 .showFrameAndHideAnimation {
