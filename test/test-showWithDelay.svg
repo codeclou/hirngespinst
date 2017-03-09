@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Source+Sans+Pro:400,600" type="text/css"?>
-<?xml-stylesheet href="../src/showWithDelay.css" type="text/css"?>
+<?xml-stylesheet href="../dist/hirngespinst.css" type="text/css"?>
 <svg width="751px" height="529px" viewBox="0 0 751 529" version="1.1"
      xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -60,10 +60,10 @@
     <!-- we use href and xlink:href even though it is deprecated since safari seems to only work with xlink:href -->
     <!-- SEE: https://developer.mozilla.org/de/docs/Web/SVG/Attribute/xlink:href -->
     <script type="text/javascript"
-            xlink:href="../src/showWithDelay.js"
-            href="../src/showWithDelay.js"
+            xlink:href="../dist/hirngespinst.js"
+            href="../dist/hirngespinst.js"
     />
     <script type="text/javascript">
-        Hirngespinst.showWithDelay();
+        new hirngespinst();
     </script>
 </svg>

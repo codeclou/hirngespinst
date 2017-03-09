@@ -1,6 +1,9 @@
 
 # Usage for HSTS (HTTP Strict Transport Security)
 
+# **:bangbang: Currently there is no way to get it to work with GitHub inside a Readme.md :bangbang:**
+
+
 If the server serving the SVG file has a very strict 
 [HSTS](https://de.wikipedia.org/wiki/HTTP_Strict_Transport_Security) like
 the `camo.githubusercontent.com` has for proxying images from README.md files on GitHub
@@ -10,7 +13,6 @@ that forbids the loading of the Hirngespinst JS and CSS then you need to either:
  * (2) Put the JS+CSS on the same server
  * (3) Embed the JS+CSS directly in the SVG
 
-**:bangbang: Currently there is no way to get it to work with GitHub inside a Readme.md :bangbang:**
 
 This is how you would **embed the JS+CSS** ([demo-showWithDelay-embed.svg](./demo/demo-showWithDelay--withAutoHide--embedded.svg))
 

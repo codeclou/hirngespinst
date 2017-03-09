@@ -16,6 +16,9 @@ Goto
 
 # Release
 
+:bangbang: Mind the license comment in `.babelrc` which will be written to the final js.file!
+
+
 **Howto Publish to npmjs.org**
 
 (0) Have it build and no pending commits

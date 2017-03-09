@@ -49,7 +49,7 @@ You can easily create such above graphic with [Sketch](https://www.sketchapp.com
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-stylesheet href="https://unpkg.com/hirngespinst@0.0.11/dist/showWithDelay.min.css" type="text/css"?>
+<?xml-stylesheet href="https://unpkg.com/hirngespinst@0.1.0/dist/hirngespinst.min.css" type="text/css"?>
 <svg width="751px" height="529px" viewBox="0 0 751 529" version="1.1" 
     xmlns="http://www.w3.org/2000/svg" 
     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -59,11 +59,11 @@ You can easily create such above graphic with [Sketch](https://www.sketchapp.com
       ...
     </g>
     <script type="text/javascript"
-            xlink:href="https://unpkg.com/hirngespinst@0.0.11/dist/showWithDelay.min.js"
-            href="https://unpkg.com/hirngespinst@0.0.11/dist/showWithDelay.min.js"
+            xlink:href="https://unpkg.com/hirngespinst@0.1.0/dist/hirngespinst.min.js"
+            href="https://unpkg.com/hirngespinst@0.1.0/dist/hirngespinst.min.js"
     />
     <script type="text/javascript">
-        Hirngespinst.showWithDelay();
+        new hirngespinst();
     </script>
 </svg>
 ```
@@ -90,7 +90,7 @@ See a working [demo here](https://codeclou.github.io/hirngespinst/demo/demo-show
 You can customize the options like so
 
 ```js
-Hirngespinst.showWithDelay({
+new hirngespinst({
     frameAnimationDurationInSeconds: 4,   // Duration how long a frame is shown
     framePauseBetweenFramesInSeconds: 2,  // Pause between frames in seconds 
     frameAutoHide: true                   // will hide the frame after it was shown for a certain time
@@ -111,16 +111,6 @@ Works in all modern browsers and was tested in the following versions
 
 Note: Internally CSS animations with `@keyframe` are used since SMIL browser-support will fade out.  
 
-
------
-
-
-&nbsp;
-
-
-### Usage for HSTS (HTTP Strict Transport Security)
-
-See [README_HTST.md](./README_HTST.md)
 
 -----
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Source+Sans+Pro:400,600" type="text/css"?>
-<?xml-stylesheet href="../src/showWithDelay.css" type="text/css"?>
+<?xml-stylesheet href="../dist/hirngespinst.css" type="text/css"?>
 <svg width="831px" height="629px" viewBox="0 0 831 629" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
     <title>FooBar-stateless-jwt-auth</title>
@@ -471,11 +471,11 @@
         <rect id="hg-loading" fill="#555555" x="0" y="619" width="10" height="10"></rect>
     </g>
     <script type="text/javascript"
-            xlink:href="../src/showWithDelay.js"
-            href="../src/showWithDelay.js"
+            xlink:href="../dist/hirngespinst.js"
+            href="../dist/hirngespinst.js"
     />
     <script type="text/javascript">
-        Hirngespinst.showWithDelay({
+        new hirngespinst({
             frameAutoHide: true
         });
     </script>
