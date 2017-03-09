@@ -10,6 +10,25 @@
   <a href="https://codeclou.github.io/hirngespinst/demo/demo.svg"><img src="https://codeclou.github.io//hirngespinst/img/demo.gif?v2" width="80%"/></a>
 </p>
 
+
+
+-----
+
+
+&nbsp;
+
+
+### Features
+
+ * single purpose
+ * create »slideshow-like« infographics
+ * vanilla-javascript
+ * modern browser support and IE11
+ * self-contained - the svg animates itself
+ * convention over configuration - works out of the box
+ * progress bar is animated
+ * automatic looping
+
 -----
 
 
