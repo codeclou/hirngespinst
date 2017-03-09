@@ -6,8 +6,9 @@
 
 **:sparkles: [DEMO](https://codeclou.github.io/hirngespinst/demo/demo.svg)**
 
-[![](https://codeclou.github.io//hirngespinst/img/demo.gif?v2)](https://codeclou.github.io/hirngespinst/demo/demo.svg)
-
+<p align="center">
+  <a href="https://codeclou.github.io/hirngespinst/demo/demo.svg"><img src="https://codeclou.github.io//hirngespinst/img/demo.gif?v2" width="80%"/></a>
+</p>
 
 -----
 
@@ -15,15 +16,13 @@
 &nbsp;
 
 
-### Usage with Sketch and Atom.io
-
-![](https://codeclou.github.io//hirngespinst/img/sketch-and-atom.png)
+### Usage with Sketch and Atom
 
 You can easily create such above graphic with **[Sketch](https://www.sketchapp.com/)** and **[Atom](https://atom.io/)** like so:
 
 &nbsp;
 
-**(1)** Download the example [**`demo.sketch`**](https://codeclou.github.io/hirngespinst/demo/demo.sketch)
+**(1)** Download the example [**`demo.sketch`**](https://codeclou.github.io/hirngespinst/demo/demo.sketch) file.
 
 &nbsp;
 
@@ -53,6 +52,7 @@ You can easily create such above graphic with **[Sketch](https://www.sketchapp.c
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" type="text/css"?>
 <?xml-stylesheet href="https://unpkg.com/hirngespinst@0.1.1/dist/hirngespinst.min.css" type="text/css"?>
 <svg width="751px" height="529px" viewBox="0 0 751 529" version="1.1" 
     xmlns="http://www.w3.org/2000/svg" 
@@ -85,7 +85,7 @@ You can easily create such above graphic with **[Sketch](https://www.sketchapp.c
 
 **Demo**
 
-See a working [demo here](https://codeclou.github.io/hirngespinst/demo/demo-showWithDelay.svg)
+See a working [demo here](https://codeclou.github.io/hirngespinst/demo/demo.svg)
 
 &nbsp;
 
