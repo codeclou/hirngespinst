@@ -6,6 +6,8 @@
 > create self-contained »slideshow-like« SVG infographics with ease
 
 
+**:sparkles: [DEMO](https://unpkg.com/hirngespinst@0.0.11/demo/demo-showWithDelay--withAutoHide.svg)**
+
 [![](https://codeclou.github.io//hirngespinst/img/demo.gif)](https://unpkg.com/hirngespinst@0.0.11/demo/demo-showWithDelay--withAutoHide.svg)
 
 
