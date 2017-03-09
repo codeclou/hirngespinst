@@ -22,7 +22,7 @@ You can easily create such above graphic with **[Sketch](https://www.sketchapp.c
 
 &nbsp;
 
-**(1)** Download the example [**`demo.sketch`**](https://codeclou.github.io/hirngespinst/demo/demo.sketch) file.
+**(1)** Download the example [:closed_book: **`demo.sketch`**](https://codeclou.github.io/hirngespinst/demo/demo.sketch) file.
 
 &nbsp;
 
@@ -85,7 +85,10 @@ You can easily create such above graphic with **[Sketch](https://www.sketchapp.c
 
 **Demo**
 
-See a working [demo here](https://codeclou.github.io/hirngespinst/demo/demo.svg)
+See working demos:
+
+ * :sparkles: [demo with default options](https://codeclou.github.io/hirngespinst/demo/demo.svg)
+ * :sparkles: [demo with `frameAutoHide=true`](https://codeclou.github.io/hirngespinst/demo/demo--autoHide.svg) 
 
 &nbsp;
 
