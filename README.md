@@ -17,10 +17,11 @@
 
 ### Usage with Sketch and Atom.io
 
-![](https://codeclou.github.io//hirngespinst/img/sketch-and-atom.png)]
+![](https://codeclou.github.io//hirngespinst/img/sketch-and-atom.png)
 
+You can easily create such above graphic with **[Sketch](https://www.sketchapp.com/)** and **[Atom](https://atom.io/)** like so:
 
-You can easily create such above graphic with [Sketch](https://www.sketchapp.com/) like so:
+&nbsp;
 
 **(1)** Download the example [**`demo-showWithDelay.sketch`**](https://codeclou.github.io/hirngespinst/demo/demo-showWithDelay.sketch)
 
