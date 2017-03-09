@@ -4,9 +4,9 @@
 
 &nbsp;
 
-**:sparkles: [DEMO](https://unpkg.com/hirngespinst@0.0.11/demo/demo-showWithDelay--withAutoHide.svg)**
+**:sparkles: [DEMO](https://codeclou.github.io/hirngespinst/demo/demo-showWithDelay--withAutoHide.svg)**
 
-[![](https://codeclou.github.io//hirngespinst/img/demo.gif)](https://unpkg.com/hirngespinst@0.0.11/demo/demo-showWithDelay--withAutoHide.svg)
+[![](https://codeclou.github.io//hirngespinst/img/demo.gif)](https://codeclou.github.io/hirngespinst/demo/demo-showWithDelay--withAutoHide.svg)
 
 
 -----
@@ -19,7 +19,7 @@
 
 You can easily create such above graphic with [Sketch](https://www.sketchapp.com/) like so:
 
-**(1)** Download the example [**`demo-showWithDelay.sketch`**](https://github.com/codeclou/hirngespinst/raw/master/demo/demo-showWithDelay.sketch)
+**(1)** Download the example [**`demo-showWithDelay.sketch`**](https://codeclou.github.io/hirngespinst/demo/demo-showWithDelay.sketch)
 
 &nbsp;
 
@@ -81,7 +81,7 @@ You can easily create such above graphic with [Sketch](https://www.sketchapp.com
 
 **Demo**
 
-See a working [demo here](https://unpkg.com/hirngespinst@0.0.11/demo/demo-showWithDelay.svg)
+See a working [demo here](https://codeclou.github.io/hirngespinst/demo/demo-showWithDelay.svg)
 
 &nbsp;
 
