@@ -15,7 +15,10 @@
 &nbsp;
 
 
-### Usage with Sketch
+### Usage with Sketch and Atom.io
+
+![](https://codeclou.github.io//hirngespinst/img/sketch-and-atom.png)]
+
 
 You can easily create such above graphic with [Sketch](https://www.sketchapp.com/) like so:
 
