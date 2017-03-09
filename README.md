@@ -22,29 +22,29 @@ You can easily create such above graphic with **[Sketch](https://www.sketchapp.c
 
 &nbsp;
 
-**(1)** Download the example [:closed_book:**`demo.sketch`**](https://codeclou.github.io/hirngespinst/demo/demo.sketch) file.
+:black_large_square:**(1)** Download the example [:closed_book:**`demo.sketch`**](https://codeclou.github.io/hirngespinst/demo/demo.sketch) file.
 
 &nbsp;
 
-**(2)** Create groups with names from `frame-01` to `frame-99` which get shown after each other.
+:black_large_square:**(2)** Create groups with names from `frame-01` to `frame-99` which get shown after each other.
  
 ![](https://codeclou.github.io/hirngespinst/img/01.png)
 
 &nbsp;
 
-**(3)** Create a rect with name `hg-loading` placed in the bottom left. This rect will then be expanded to 100% width as an animation.
+:black_large_square:**(3)** Create a rect with name `hg-loading` placed in the bottom left. This rect will then be expanded to 100% width as an animation.
  
 ![](https://codeclou.github.io/hirngespinst/img/02.png)
 
 &nbsp;
 
-**(4)** Insert a slice and export as SVG. Make sure all frame-groups are visible even if the overlap, otherwise they will not get exported.
+:black_large_square:**(4)** Insert a slice and export as SVG. Make sure all frame-groups are visible even if the overlap, otherwise they will not get exported.
  
 ![](https://codeclou.github.io/hirngespinst/img/03.png)
 
 &nbsp;
 
-**(5)** Open the SVG in an Editor like the [awesome Atom](https://atom.io/) and add the following.
+:black_large_square:**(5)** Open the SVG in an Editor like the [awesome Atom](https://atom.io/) and add the following.
 
 ![](https://codeclou.github.io/hirngespinst/img/04.png)
 
@@ -75,7 +75,7 @@ You can easily create such above graphic with **[Sketch](https://www.sketchapp.c
 &nbsp;
 
 
-**(6)** Now use your SVG like so in your website
+:black_large_square:**(6)** Now use your SVG like so in your website
 
 ```html
 <img src="http://myserver/my.svg" />
