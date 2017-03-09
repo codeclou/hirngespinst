@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Source+Sans+Pro:400,600" type="text/css"?>
+<?xml-stylesheet href="https://unpkg.com/hirngespinst@0.0.11/dist/showWithDelay.min.css" type="text/css"?>
+<svg width="831px" height="629px" viewBox="0 0 831 629" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>FooBar-stateless-jwt-auth</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="frame-19" transform="translate(164.000000, 198.000000) scale(-1, 1) translate(-164.000000, -198.000000) translate(118.000000, 179.000000)" fill="#002DBC">
+            <ellipse id="Oval" transform="translate(78.000000, 20.000000) scale(-1, 1) translate(-78.000000, -20.000000) " cx="78" cy="20" rx="14" ry="14"></ellipse>
+            <g id="text" transform="translate(27.500000, 19.000000) scale(-1, 1) translate(-27.500000, -19.000000) " font-size="30" font-family="SourceSansPro-Semibold, Source Sans Pro" font-weight="500">
+                <text id="END">
+                    <tspan x="0" y="30">END</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="frame-18" transform="translate(223.000000, 274.500000) scale(-1, 1) translate(-223.000000, -274.500000) translate(17.000000, 182.000000)">
+            <path d="M12.5,31.5 L226.5,184.5" id="Line" stroke="#002DBC" stroke-width="3" stroke-linecap="square"></path>
+            <polygon id="Triangle" fill="#002DBC" transform="translate(13.000000, 31.727922) rotate(315.000000) translate(-13.000000, -31.727922) " points="13 22.7279221 22 40.7279221 4 40.7279221"></polygon>
+            <ellipse id="Oval" fill="#002DBC" transform="translate(398.000000, 14.000000) scale(-1, 1) translate(-398.000000, -14.000000) " cx="398" cy="14" rx="14" ry="14"></ellipse>
+            <g id="text" transform="translate(293.000000, 65.000000) scale(-1, 1) translate(-293.000000, -65.000000) translate(174.000000, 2.000000)">
+                <text id="18" font-family="SourceSansPro-Bold, Source Sans Pro" font-size="16" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="5.052" y="16">18</tspan>
+                </text>
+                <text id="Client-Side-POST-Res" font-family="SourceSansPro-It, Source Sans Pro" font-size="12" font-style="italic" font-weight="normal" fill="#002DBC">
+                    <tspan x="0" y="48">Client-Side POST Response  (FETCH)</tspan>
+                    <tspan x="174.348" y="48" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16"></tspan>
+                    <tspan x="0" y="63" font-family="SourceSansPro-Regular, Source Sans Pro">https://pdf-converter.foo.bar/create</tspan>
+                    <tspan x="0" y="78" font-family="RobotoMono-Regular, Roboto Mono" font-size="11">Http-Body: </tspan>
+                    <tspan x="0" y="93" font-family="RobotoMono-Regular, Roboto Mono" font-size="11">{</tspan>
+                    <tspan x="0" y="108" font-family="RobotoMono-Regular, Roboto Mono" font-size="11">  "downloadHash": "as8gasdgasgdsagd"</tspan>
+                    <tspan x="0" y="123" font-family="RobotoMono-Regular, Roboto Mono" font-size="11">}</tspan>
+                </text>
+                <text id="Retrieve-PDF-Downloa" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="16" font-weight="500" fill="#002DBC">
+                    <tspan x="37" y="16">Retrieve PDF Download link</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="frame-17" transform="translate(164.000000, 357.000000)">
+            <path d="M39.5,9.5 L149.5,9.5" id="Line" stroke="#002DBC" stroke-width="3" stroke-linecap="square"></path>
+            <polygon id="Triangle" fill="#002DBC" transform="translate(40.000000, 9.000000) scale(-1, 1) rotate(90.000000) translate(-40.000000, -9.000000) " points="40 0 49 18 31 18"></polygon>
+            <ellipse id="Oval" fill="#002DBC" cx="14" cy="66" rx="14" ry="14"></ellipse>
+            <g id="text" transform="translate(1.000000, 54.000000)">
+                <text id="17" font-family="SourceSansPro-Bold, Source Sans Pro" font-size="16" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="5.052" y="16">17</tspan>
+                </text>
+                <text id="Server-Side-GET-Resp" font-family="SourceSansPro-It, Source Sans Pro" font-size="12" font-style="italic" font-weight="normal" fill="#002DBC">
+                    <tspan x="0" y="48">Server-Side GET Response</tspan>
+                    <tspan x="126.468" y="48" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16"></tspan>
+                    <tspan x="0" y="63" font-family="RobotoMono-Regular, Roboto Mono" font-size="11">HTTP 200</tspan>
+                    <tspan x="0" y="78" font-family="RobotoMono-Regular, Roboto Mono" font-size="11">{</tspan>
+                    <tspan x="0" y="93" font-family="RobotoMono-Regular, Roboto Mono" font-size="11">  "message": "JsonWebTokenIsValid"</tspan>
+                    <tspan x="0" y="108" font-family="RobotoMono-Regular, Roboto Mono" font-size="11">}</tspan>
+                </text>
+                <text id="Validate-JWT-Token-R" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="16" font-weight="500" fill="#002DBC">
+                    <tspan x="37" y="16">Validate JWT Token Response</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="frame-16" transform="translate(164.000000, 357.000000)">
+            <path d="M41.5,9.5 L151.5,9.5" id="Line" stroke="#002DBC" stroke-width="3" stroke-linecap="square"></path>
+            <polygon id="Triangle" fill="#002DBC" transform="translate(150.000000, 9.000000) rotate(90.000000) translate(-150.000000, -9.000000) " points="150 0 159 18 141 18"></polygon>
+            <ellipse id="Oval" fill="#002DBC" cx="14" cy="66" rx="14" ry="14"></ellipse>
+            <g id="text" transform="translate(1.000000, 54.000000)">
+                <text id="16" font-family="SourceSansPro-Bold, Source Sans Pro" font-size="16" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="5.052" y="16">16</tspan>
+                </text>
+                <text id="Server-Side-GET-Requ" font-family="SourceSansPro-It, Source Sans Pro" font-size="12" font-style="italic" font-weight="normal" fill="#002DBC">
+                    <tspan x="0" y="48">Server-Side GET Request</tspan>
+                    <tspan x="119.424" y="48" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16"></tspan>
+                    <tspan x="0" y="63" font-family="SourceSansPro-Regular, Source Sans Pro">https://auth-server.foo.bar/ oauth/check_token</tspan>
+                    <tspan x="250.404" y="63" font-family="HiraginoSans-W3, Hiragino Sans" font-weight="300">⏎</tspan>
+                    <tspan x="262.404" y="63" font-family="SourceSansPro-Regular, Source Sans Pro"></tspan>
+                    <tspan x="0" y="78" font-family="SourceSansPro-Regular, Source Sans Pro">                               ?token=AIAIBIAIAGBIGSPDDD…</tspan>
+                </text>
+                <text id="Validate-JWT-Token" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="16" font-weight="500" fill="#002DBC">
+                    <tspan x="37" y="16">Validate JWT Token</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="frame-15" transform="translate(217.000000, 280.500000) scale(-1, 1) translate(-217.000000, -280.500000) translate(17.000000, 182.000000)">
+            <path d="M0.5,31.5 L214.5,184.5" id="Line" stroke="#002DBC" stroke-width="3" stroke-linecap="square"></path>
+            <polygon id="Triangle" fill="#002DBC" transform="translate(213.000000, 184.000000) rotate(125.000000) translate(-213.000000, -184.000000) " points="213 175 222 193 204 193"></polygon>
+            <ellipse id="Oval" fill="#002DBC" transform="translate(386.000000, 14.000000) scale(-1, 1) translate(-386.000000, -14.000000) " cx="386" cy="14" rx="14" ry="14"></ellipse>
+            <g id="text" transform="translate(267.000000, 50.000000) scale(-1, 1) translate(-267.000000, -50.000000) translate(134.000000, 2.000000)">
+                <text id="15" font-family="SourceSansPro-Bold, Source Sans Pro" font-size="16" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="5.052" y="16">15</tspan>
+                </text>
+                <text id="Client-Side-POST-Req" font-family="SourceSansPro-It, Source Sans Pro" font-size="12" font-style="italic" font-weight="normal" fill="#002DBC">
+                    <tspan x="0" y="48">Client-Side POST Request  (FETCH)</tspan>
+                    <tspan x="167.304" y="48" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16"></tspan>
+                    <tspan x="0" y="63" font-family="SourceSansPro-Regular, Source Sans Pro">https://pdf-converter.foo.bar/create</tspan>
+                    <tspan x="0" y="78" font-family="RobotoMono-Regular, Roboto Mono" font-size="11">Http-Header:	X-Token	AIAIBIAIAGBIGSPDDD…</tspan>
+                    <tspan x="0" y="93" font-family="RobotoMono-Regular, Roboto Mono" font-size="11">Http-Body: &lt;html document …&gt;</tspan>
+                </text>
+                <text id="Request-HTML-to-PDF" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="16" font-weight="500" fill="#002DBC">
+                    <tspan x="37" y="16">Request HTML to PDF Conversion</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="frame-14" transform="translate(400.000000, 182.000000)">
+            <path d="M11.5,31.5 L225.5,184.5" id="Line" stroke="#002DBC" stroke-width="3" stroke-linecap="square"></path>
+            <polygon id="Triangle" fill="#002DBC" transform="translate(12.727922, 30.727922) rotate(313.000000) translate(-12.727922, -30.727922) " points="12.7279221 21.7279221 21.7279221 39.7279221 3.72792206 39.7279221"></polygon>
+            <ellipse id="Oval" fill="#002DBC" cx="133" cy="14" rx="14" ry="14"></ellipse>
+            <g id="text" transform="translate(120.000000, 2.000000)">
+                <text id="14" font-family="SourceSansPro-Bold, Source Sans Pro" font-size="16" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="5.052" y="16">14</tspan>
+                </text>
+                <text id="Client-Side-GET-Resp" font-family="SourceSansPro-It, Source Sans Pro" font-size="12" font-style="italic" font-weight="normal" fill="#002DBC">
+                    <tspan x="0" y="48">Client-Side GET Response (FETCH)</tspan>
+                    <tspan x="164.868" y="48" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16"></tspan>
+                    <tspan x="0" y="63" font-family="RobotoMono-Regular, Roboto Mono" font-size="11">{ </tspan>
+                    <tspan x="0" y="78" font-family="RobotoMono-Regular, Roboto Mono" font-size="11">   "foo": "bar"</tspan>
+                    <tspan x="0" y="93" font-family="RobotoMono-Regular, Roboto Mono" font-size="11">}</tspan>
+                </text>
+                <text id="Retrieve-Database-En" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="16" font-weight="500" fill="#002DBC">
+                    <tspan x="37" y="16">Retrieve Database Entry via REST API</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="frame-13" transform="translate(515.000000, 357.000000)">
+            <path d="M0.5,9.5 L110.5,9.5" id="Line" stroke="#002DBC" stroke-width="3" stroke-linecap="square"></path>
+            <polygon id="Triangle" fill="#002DBC" transform="translate(109.000000, 9.000000) rotate(90.000000) translate(-109.000000, -9.000000) " points="109 0 118 18 100 18"></polygon>
+            <ellipse id="Oval" fill="#002DBC" cx="18" cy="66" rx="14" ry="14"></ellipse>
+            <g id="text" transform="translate(5.000000, 54.000000)">
+                <text id="13" font-family="SourceSansPro-Bold, Source Sans Pro" font-size="16" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="5.052" y="16">13</tspan>
+                </text>
+                <text id="Server-Side-GET-Resp" font-family="SourceSansPro-It, Source Sans Pro" font-size="12" font-style="italic" font-weight="normal" fill="#002DBC">
+                    <tspan x="0" y="48">Server-Side GET Response</tspan>
+                    <tspan x="126.468" y="48" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16"></tspan>
+                    <tspan x="0" y="63" font-family="RobotoMono-Regular, Roboto Mono" font-size="11">HTTP 200</tspan>
+                    <tspan x="0" y="78" font-family="RobotoMono-Regular, Roboto Mono" font-size="11">{</tspan>
+                    <tspan x="0" y="93" font-family="RobotoMono-Regular, Roboto Mono" font-size="11">  "message": "JsonWebTokenIsValid"</tspan>
+                    <tspan x="0" y="108" font-family="RobotoMono-Regular, Roboto Mono" font-size="11">}</tspan>
+                    <tspan x="0" y="123" font-family="RobotoMono-Regular, Roboto Mono" font-size="11"></tspan>
+                    <tspan x="0" y="138" font-family="RobotoMono-Regular, Roboto Mono" font-size="11">HTTP 403</tspan>
+                    <tspan x="0" y="153" font-family="RobotoMono-Regular, Roboto Mono" font-size="11">{</tspan>
+                    <tspan x="0" y="168" font-family="RobotoMono-Regular, Roboto Mono" font-size="11">  "message": "JsonWebTokenIsInvalid",</tspan>
+                    <tspan x="0" y="183" font-family="RobotoMono-Regular, Roboto Mono" font-size="11">  "details": "SignatureVerificationException"</tspan>
+                    <tspan x="0" y="198" font-family="RobotoMono-Regular, Roboto Mono" font-size="11">}</tspan>
+                </text>
+                <text id="Validate-JWT-Token-R" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="16" font-weight="500" fill="#002DBC">
+                    <tspan x="37" y="16">Validate JWT Token Response</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="frame-12" transform="translate(506.000000, 357.000000)">
+            <path d="M9.5,9.5 L119.5,9.5" id="Line" stroke="#002DBC" stroke-width="3" stroke-linecap="square"></path>
+            <polygon id="Triangle" fill="#002DBC" transform="translate(9.000000, 9.000000) scale(-1, 1) rotate(90.000000) translate(-9.000000, -9.000000) " points="9 0 18 18 0 18"></polygon>
+            <ellipse id="Oval" fill="#002DBC" cx="27" cy="66" rx="14" ry="14"></ellipse>
+            <g id="text" transform="translate(14.000000, 54.000000)">
+                <text id="12" font-family="SourceSansPro-Bold, Source Sans Pro" font-size="16" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="5.052" y="16">12</tspan>
+                </text>
+                <text id="Server-Side-GET-Requ" font-family="SourceSansPro-It, Source Sans Pro" font-size="12" font-style="italic" font-weight="normal" fill="#002DBC">
+                    <tspan x="0" y="48">Server-Side GET Request</tspan>
+                    <tspan x="119.424" y="48" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16"></tspan>
+                    <tspan x="0" y="63" font-family="SourceSansPro-Regular, Source Sans Pro">https://auth-server.foo.bar/ oauth/check_token</tspan>
+                    <tspan x="250.404" y="63" font-family="HiraginoSans-W3, Hiragino Sans" font-weight="300">⏎</tspan>
+                    <tspan x="262.404" y="63" font-family="SourceSansPro-Regular, Source Sans Pro"></tspan>
+                    <tspan x="0" y="78" font-family="SourceSansPro-Regular, Source Sans Pro">                               ?token=AIAIBIAIAGBIGSPDDD…</tspan>
+                    <tspan x="0" y="93" font-family="SourceSansPro-Regular, Source Sans Pro"></tspan>
+                    <tspan x="0" y="108" font-family="SourceSansPro-Regular, Source Sans Pro">Validates:</tspan>
+                    <tspan x="0" y="123" font-family="SourceSansPro-Regular, Source Sans Pro">    1. is token expired ‚exp‘</tspan>
+                    <tspan x="0" y="138" font-family="SourceSansPro-Regular, Source Sans Pro">    2. is tokken issued by this auth-server ‚iss‘</tspan>
+                    <tspan x="0" y="153" font-family="SourceSansPro-Regular, Source Sans Pro">    3. is token signature valid ‚secret‘</tspan>
+                </text>
+                <text id="Validate-JWT-Token" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="16" font-weight="500" fill="#002DBC">
+                    <tspan x="37" y="16">Validate JWT Token</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="frame-11" transform="translate(411.000000, 182.000000)">
+            <path d="M0.5,31.5 L214.5,184.5" id="Line" stroke="#002DBC" stroke-width="3" stroke-linecap="square"></path>
+            <polygon id="Triangle" fill="#002DBC" transform="translate(213.000000, 184.000000) rotate(125.000000) translate(-213.000000, -184.000000) " points="213 175 222 193 204 193"></polygon>
+            <ellipse id="Oval" fill="#002DBC" cx="122" cy="14" rx="14" ry="14"></ellipse>
+            <g id="text" transform="translate(109.000000, 2.000000)">
+                <text id="11" font-family="SourceSansPro-Bold, Source Sans Pro" font-size="16" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="5.052" y="16">11</tspan>
+                </text>
+                <text id="Client-Side-GET-Requ" font-family="SourceSansPro-It, Source Sans Pro" font-size="12" font-style="italic" font-weight="normal" fill="#002DBC">
+                    <tspan x="0" y="48">Client-Side GET Request  (FETCH)</tspan>
+                    <tspan x="160.128" y="48" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16"></tspan>
+                    <tspan x="0" y="63" font-family="SourceSansPro-Regular, Source Sans Pro">https://backend.foo.bar/api/1.0/user/3</tspan>
+                    <tspan x="0" y="78" font-family="RobotoMono-Regular, Roboto Mono" font-size="11">Http-Header:	X-Token	AIAIBIAIAGBIGSPDDD…</tspan>
+                </text>
+                <text id="Request-Database-Ent" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="16" font-weight="500" fill="#002DBC">
+                    <tspan x="37" y="16">Request Database Entry via REST API</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="frame-10" transform="translate(402.000000, 206.000000)">
+            <path d="M9.5,7.5 L9.5,116.5" id="Line" stroke="#002DBC" stroke-width="3" stroke-linecap="square"></path>
+            <polygon id="Triangle" fill="#002DBC" points="9 0 18 18 0 18"></polygon>
+            <circle id="Oval" fill="#002DBC" cx="37" cy="37" r="14"></circle>
+            <g id="text" transform="translate(24.000000, 17.000000)">
+                <text id="10" font-family="SourceSansPro-Bold, Source Sans Pro" font-size="16" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="5.052" y="24">10</tspan>
+                </text>
+                <text id="Browser-redirect-to" font-family="SourceSansPro-It, Source Sans Pro" font-size="12" font-style="italic" font-weight="normal" fill="#002DBC">
+                    <tspan x="0" y="56">Browser redirect to </tspan>
+                    <tspan x="95.592" y="56" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16"></tspan>
+                    <tspan x="0" y="71" font-family="SourceSansPro-Regular, Source Sans Pro">https://app.foo.bar/#/authenticated?token=AIAIBIAIAGBIGSPDDD..</tspan>
+                </text>
+                <text id="Redirect-back-to-Fro" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="16" font-weight="500" fill="#002DBC">
+                    <tspan x="37" y="16">Redirect back to Frontend with JWT as URL Param</tspan>
+                    <tspan x="37" y="36">Frontend saves Token in localStorage</tspan>
+                </text>
+                <text id="HEADER-{-&quot;alg&quot;:-&quot;HS5" font-family="RobotoMono-Bold, Roboto Mono" font-size="11" font-weight="bold" fill="#002DBC">
+                    <tspan x="84" y="129">HEADER</tspan>
+                    <tspan x="123.606445" y="129" font-family="RobotoMono-Regular, Roboto Mono" font-weight="normal"></tspan>
+                    <tspan x="84" y="144" font-family="RobotoMono-Regular, Roboto Mono" font-weight="normal">{</tspan>
+                    <tspan x="84" y="159" font-family="RobotoMono-Regular, Roboto Mono" font-weight="normal">  "alg": "HS512"</tspan>
+                    <tspan x="84" y="174" font-family="RobotoMono-Regular, Roboto Mono" font-weight="normal">}</tspan>
+                    <tspan x="84" y="189">PAYLOAD</tspan>
+                    <tspan x="130.20752" y="189" font-family="RobotoMono-Regular, Roboto Mono" font-weight="normal"></tspan>
+                    <tspan x="84" y="204" font-family="RobotoMono-Regular, Roboto Mono" font-weight="normal">{</tspan>
+                    <tspan x="84" y="219" font-family="RobotoMono-Regular, Roboto Mono" font-weight="normal">  "iss": "FooBar-auth-server-prod",</tspan>
+                    <tspan x="84" y="234" font-family="RobotoMono-Regular, Roboto Mono" font-weight="normal">  "exp": 1488331330,</tspan>
+                    <tspan x="84" y="249" font-family="RobotoMono-Regular, Roboto Mono" font-weight="normal">  "gitHubUserName":        "chucknorris",</tspan>
+                    <tspan x="84" y="264" font-family="RobotoMono-Regular, Roboto Mono" font-weight="normal">  "gitHubUserFK":          "1",</tspan>
+                    <tspan x="84" y="279" font-family="RobotoMono-Regular, Roboto Mono" font-weight="normal">  "gitHubOrganisations":   [ "texasrangers", </tspan>
+                    <tspan x="84" y="294" font-family="RobotoMono-Regular, Roboto Mono" font-weight="normal">                             "deltaforce" ],</tspan>
+                    <tspan x="84" y="309" font-family="RobotoMono-Regular, Roboto Mono" font-weight="normal">  "gitHubOrganisationFKs": [ "1", "2"  ]</tspan>
+                    <tspan x="84" y="324" font-family="RobotoMono-Regular, Roboto Mono" font-weight="normal">}</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="frame-09" transform="translate(403.000000, 403.000000)">
+            <path d="M9.5,7.5 L9.5,116.5" id="Line" stroke="#009747" stroke-width="3" stroke-linecap="square"></path>
+            <polygon id="Triangle" fill="#009747" points="9 0 18 18 0 18"></polygon>
+            <circle id="Oval" fill="#009747" cx="37" cy="28" r="14"></circle>
+            <g id="text" transform="translate(33.000000, 16.000000)">
+                <text id="9" font-family="SourceSansPro-Bold, Source Sans Pro" font-size="16" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="0.276" y="16">9</tspan>
+                </text>
+                <text id="[-{-&quot;login&quot;:-&quot;texasr" font-family="RobotoMono-Regular, Roboto Mono" font-size="10" font-weight="normal" fill="#009747">
+                    <tspan x="70" y="39">[</tspan>
+                    <tspan x="70" y="52">  {</tspan>
+                    <tspan x="70" y="65">    "login": "texasrangers",</tspan>
+                    <tspan x="70" y="78">    "id": 1</tspan>
+                    <tspan x="70" y="91">  },</tspan>
+                    <tspan x="70" y="104">  {</tspan>
+                    <tspan x="70" y="117">    "login": "deltaforce",</tspan>
+                    <tspan x="70" y="130">    "id": 2</tspan>
+                    <tspan x="70" y="143">  }</tspan>
+                    <tspan x="70" y="156">]</tspan>
+                </text>
+                <text id="Retrieve-Organizatio" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="16" font-weight="500" fill="#009747">
+                    <tspan x="26" y="16">Retrieve Organization-Information</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="frame-08" transform="translate(403.000000, 410.000000)">
+            <path d="M9.5,0.5 L9.5,109.5" id="Line" stroke="#009747" stroke-width="3" stroke-linecap="square"></path>
+            <polygon id="Triangle" fill="#009747" transform="translate(9.000000, 105.000000) scale(1, -1) translate(-9.000000, -105.000000) " points="9 96 18 114 0 114"></polygon>
+            <circle id="Oval" fill="#009747" cx="37" cy="21" r="14"></circle>
+            <g id="text" transform="translate(24.000000, 9.000000)">
+                <text id="8" font-family="SourceSansPro-Bold, Source Sans Pro" font-size="16" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="9.276" y="16">8</tspan>
+                </text>
+                <text id="Server-Side-GET-Requ" font-family="SourceSansPro-It, Source Sans Pro" font-size="12" font-style="italic" font-weight="normal" fill="#009747">
+                    <tspan x="0" y="48">Server-Side GET Request</tspan>
+                    <tspan x="119.424" y="48" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16"></tspan>
+                    <tspan x="0" y="63" font-family="SourceSansPro-Regular, Source Sans Pro">https://api.github.com/user/orgs?access_token=e72e16cxe178b4a</tspan>
+                </text>
+                <text id="Request-Organization" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="16" font-weight="500" fill="#009747">
+                    <tspan x="35" y="16">Request Organization-Information</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="frame-07" transform="translate(403.000000, 403.000000)">
+            <path d="M9.5,7.5 L9.5,116.5" id="Line" stroke="#009747" stroke-width="3" stroke-linecap="square"></path>
+            <polygon id="Triangle" fill="#009747" points="9 0 18 18 0 18"></polygon>
+            <circle id="Oval" fill="#009747" cx="37" cy="28" r="14"></circle>
+            <g id="text" transform="translate(33.000000, 16.000000)">
+                <text id="7" font-family="SourceSansPro-Bold, Source Sans Pro" font-size="16" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="0.276" y="16">7</tspan>
+                </text>
+                <text id="{-&quot;login&quot;:-&quot;chucknor" font-family="RobotoMono-Regular, Roboto Mono" font-size="10" font-weight="normal" fill="#009747">
+                    <tspan x="70" y="39">{</tspan>
+                    <tspan x="70" y="52">  "login": "chucknorris",</tspan>
+                    <tspan x="70" y="65">  "id": 1,</tspan>
+                    <tspan x="70" y="78">  "created_at": "1970-01-14T04:20:00Z",</tspan>
+                    <tspan x="70" y="91">  "updated_at": "1970-01-14T04:20:00Z"</tspan>
+                    <tspan x="70" y="104">}</tspan>
+                </text>
+                <text id="Retrieve-User-Inform" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="16" font-weight="500" fill="#009747">
+                    <tspan x="26" y="16">Retrieve User-Information</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="frame-06" transform="translate(403.000000, 410.000000)">
+            <path d="M9.5,0.5 L9.5,109.5" id="Line" stroke="#009747" stroke-width="3" stroke-linecap="square"></path>
+            <polygon id="Triangle" fill="#009747" transform="translate(9.000000, 105.000000) scale(1, -1) translate(-9.000000, -105.000000) " points="9 96 18 114 0 114"></polygon>
+            <circle id="Oval" fill="#009747" cx="37" cy="21" r="14"></circle>
+            <g id="text" transform="translate(24.000000, 9.000000)">
+                <text id="6" font-family="SourceSansPro-Bold, Source Sans Pro" font-size="16" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="9.276" y="16">6</tspan>
+                </text>
+                <text id="Server-Side-GET-Requ" font-family="SourceSansPro-It, Source Sans Pro" font-size="12" font-style="italic" font-weight="normal" fill="#009747">
+                    <tspan x="0" y="48">Server-Side GET Request</tspan>
+                    <tspan x="119.424" y="48" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16"></tspan>
+                    <tspan x="0" y="63" font-family="SourceSansPro-Regular, Source Sans Pro">https://api.github.com/user?access_token=e72e16cxe178b4a</tspan>
+                </text>
+                <text id="Request-User-Informa" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="16" font-weight="500" fill="#009747">
+                    <tspan x="35" y="16">Request User-Information</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="frame-05" transform="translate(403.000000, 403.000000)">
+            <path d="M9.5,7.5 L9.5,116.5" id="Line" stroke="#BC00B9" stroke-width="3" stroke-linecap="square"></path>
+            <polygon id="Triangle" fill="#BC00B9" points="9 0 18 18 0 18"></polygon>
+            <circle id="Oval" fill="#BC00B9" cx="37" cy="37" r="14"></circle>
+            <g id="text" transform="translate(24.000000, 25.000000)">
+                <text id="5" font-family="SourceSansPro-Bold, Source Sans Pro" font-size="16" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="9.276" y="16">5</tspan>
+                </text>
+                <text id="Server-Side-POST-Res" font-family="SourceSansPro-It, Source Sans Pro" font-size="12" font-style="italic" font-weight="normal" fill="#BC00B9">
+                    <tspan x="0" y="48">Server-Side POST Response</tspan>
+                    <tspan x="0" y="63" font-family="SourceSansPro-Regular, Source Sans Pro">Body:</tspan>
+                    <tspan x="28.812" y="63" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16"></tspan>
+                </text>
+                <text id="{-&quot;access_token&quot;:&quot;e7" font-family="RobotoMono-Regular, Roboto Mono" font-size="11" font-weight="normal" fill="#BC00B9">
+                    <tspan x="74" y="65">{</tspan>
+                    <tspan x="74" y="80">  "access_token":"e72e16cxe178b4a", </tspan>
+                    <tspan x="74" y="95">  "scope":"repo,gist", </tspan>
+                    <tspan x="74" y="110">  "token_type":"bearer"</tspan>
+                    <tspan x="74" y="125">}</tspan>
+                </text>
+                <text id="Retrieve-Access-Toke" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="16" font-weight="500" fill="#BC00B9">
+                    <tspan x="35" y="17">Retrieve Access Token</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="frame-04" transform="translate(403.000000, 410.000000)">
+            <path d="M9.5,0.5 L9.5,109.5" id="Line" stroke="#BC00B9" stroke-width="3" stroke-linecap="square"></path>
+            <polygon id="Triangle" fill="#BC00B9" transform="translate(9.000000, 105.000000) scale(1, -1) translate(-9.000000, -105.000000) " points="9 96 18 114 0 114"></polygon>
+            <circle id="Oval" fill="#BC00B9" cx="37" cy="21" r="14"></circle>
+            <g id="text" transform="translate(24.000000, 9.000000)">
+                <text id="4" font-family="SourceSansPro-Bold, Source Sans Pro" font-size="16" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="9.276" y="16">4</tspan>
+                </text>
+                <text id="Server-Side-POST-Req" font-family="SourceSansPro-It, Source Sans Pro" font-size="12" font-style="italic" font-weight="normal" fill="#BC00B9">
+                    <tspan x="0" y="48">Server-Side POST Request containing Client Secret</tspan>
+                    <tspan x="245.448" y="48" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16"></tspan>
+                    <tspan x="0" y="63" font-family="SourceSansPro-Regular, Source Sans Pro">https://github.com/login/oauth/access_token</tspan>
+                    <tspan x="0" y="78" font-family="SourceSansPro-Regular, Source Sans Pro">Post-Body:    </tspan>
+                </text>
+                <text id="client_id=1234-clien" font-family="RobotoMono-Regular, Roboto Mono" font-size="11" font-weight="normal" fill="#BC00B9">
+                    <tspan x="82" y="82">client_id=1234</tspan>
+                    <tspan x="82" y="97">client_secret=itSaSecrt</tspan>
+                    <tspan x="82" y="112">code=123441212</tspan>
+                </text>
+                <text id="Exchange-Access-Code" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="16" font-weight="500" fill="#BC00B9">
+                    <tspan x="36" y="17">Exchange Access Code for Access Token</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="frame-03" transform="translate(403.000000, 403.000000)">
+            <path d="M9.5,7.5 L9.5,116.5" id="Line" stroke="#BC00B9" stroke-width="3" stroke-linecap="square"></path>
+            <polygon id="Triangle" fill="#BC00B9" points="9 0 18 18 0 18"></polygon>
+            <circle id="Oval" fill="#BC00B9" cx="37" cy="37" r="14"></circle>
+            <g id="text" transform="translate(24.000000, 25.000000)">
+                <text id="3" font-family="SourceSansPro-Bold, Source Sans Pro" font-size="16" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="9.276" y="16">3</tspan>
+                </text>
+                <text id="Browser-redirect-wit" font-family="SourceSansPro-It, Source Sans Pro" font-size="12" font-style="italic" font-weight="normal" fill="#BC00B9">
+                    <tspan x="0" y="48">Browser redirect with code as URL-Parameter to</tspan>
+                    <tspan x="234.732" y="48" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16"></tspan>
+                    <tspan x="0" y="63" font-family="SourceSansPro-Regular, Source Sans Pro">https://auth-server.foo.bar/github-oauth/</tspan>
+                    <tspan x="220.104" y="63" font-family="HiraginoSans-W3, Hiragino Sans" font-weight="300">⏎</tspan>
+                    <tspan x="232.104" y="63" font-family="SourceSansPro-Regular, Source Sans Pro"></tspan>
+                    <tspan x="0" y="78" font-family="SourceSansPro-Regular, Source Sans Pro">                 ask-for-token/prod-to-FooBar-frontend-prod?code=123441212</tspan>
+                </text>
+                <text id="Retrieve-GitHub-Acce" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="16" font-weight="500" fill="#BC00B9">
+                    <tspan x="36" y="17">Retrieve GitHub Access Code</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="frame-02" transform="translate(403.000000, 410.000000)">
+            <path d="M9.5,0.5 L9.5,109.5" id="Line" stroke="#BC00B9" stroke-width="3" stroke-linecap="square"></path>
+            <polygon id="Triangle" fill="#BC00B9" transform="translate(9.000000, 105.000000) scale(1, -1) translate(-9.000000, -105.000000) " points="9 96 18 114 0 114"></polygon>
+            <circle id="Oval" fill="#BC00B9" cx="37" cy="21" r="14"></circle>
+            <g id="text" transform="translate(24.000000, 9.000000)">
+                <text id="2" font-family="SourceSansPro-Bold, Source Sans Pro" font-size="16" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="9.276" y="16">2</tspan>
+                </text>
+                <text id="Browser-redirect-to" font-family="SourceSansPro-It, Source Sans Pro" font-size="12" font-style="italic" font-weight="normal" fill="#BC00B9">
+                    <tspan x="0" y="48">Browser redirect to </tspan>
+                    <tspan x="95.592" y="48" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16"></tspan>
+                    <tspan x="0" y="63" font-family="SourceSansPro-Regular, Source Sans Pro">https://github.com/login/oauth/authorize?client_id=X&amp;…</tspan>
+                    <tspan x="290.388" y="63" font-family="HiraginoSans-W3, Hiragino Sans" font-weight="300">⏎</tspan>
+                    <tspan x="302.388" y="63" font-family="SourceSansPro-Regular, Source Sans Pro"></tspan>
+                    <tspan x="0" y="78" font-family="SourceSansPro-Regular, Source Sans Pro">                            &amp;redirect_uri=https://auth-server.foo.bar/</tspan>
+                    <tspan x="289.8" y="78" font-family="HiraginoSans-W3, Hiragino Sans" font-weight="300">⏎</tspan>
+                    <tspan x="301.8" y="78" font-family="SourceSansPro-Regular, Source Sans Pro"></tspan>
+                    <tspan x="0" y="93" font-family="SourceSansPro-Regular, Source Sans Pro">                            github-oauth/ask-for-token/prod-to-FooBar-frontend-prod</tspan>
+                </text>
+                <text id="Request-GitHub-Acces" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="16" font-weight="500" fill="#BC00B9">
+                    <tspan x="36" y="17">Request GitHub Access Code</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="frame-01" transform="translate(402.000000, 213.000000)">
+            <path d="M9.5,0.5 L9.5,109.5" id="Line" stroke="#BC00B9" stroke-width="3" stroke-linecap="square"></path>
+            <polygon id="Triangle" fill="#BC00B9" transform="translate(9.000000, 105.000000) scale(1, -1) translate(-9.000000, -105.000000) " points="9 96 18 114 0 114"></polygon>
+            <circle id="Oval" fill="#BC00B9" cx="37" cy="30" r="14"></circle>
+            <g id="text" transform="translate(24.000000, 18.000000)">
+                <text id="1" font-family="SourceSansPro-Bold, Source Sans Pro" font-size="16" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="9.276" y="16">1</tspan>
+                </text>
+                <text id="Browser-redirect-to" font-family="SourceSansPro-It, Source Sans Pro" font-size="12" font-style="italic" font-weight="normal" fill="#BC00B9">
+                    <tspan x="0" y="48">Browser redirect to </tspan>
+                    <tspan x="95.592" y="48" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16"></tspan>
+                    <tspan x="0" y="63" font-family="SourceSansPro-Regular, Source Sans Pro">https://auth-server.foo.bar/github-oauth/</tspan>
+                    <tspan x="220.104" y="63" font-family="HiraginoSans-W3, Hiragino Sans" font-weight="300">⏎</tspan>
+                    <tspan x="0" y="78" font-family="HiraginoSans-W3, Hiragino Sans" font-weight="300">                 </tspan>
+                    <tspan x="67.932" y="78" font-family="SourceSansPro-Regular, Source Sans Pro">login/prod-to-FooBar-frontend-prod</tspan>
+                </text>
+                <text id="Login-with-GitHub-fo" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="16" font-weight="500" fill="#BC00B9">
+                    <tspan x="37" y="17">Login with GitHub for specific ENV</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="static" transform="translate(26.000000, 139.000000)">
+            <rect id="Rectangle" fill="#555555" x="0" y="197" width="163" height="61"></rect>
+            <rect id="Rectangle" fill="#555555" x="306" y="197" width="163" height="61"></rect>
+            <rect id="Rectangle" fill="#555555" x="306" y="0" width="163" height="61"></rect>
+            <rect id="Rectangle" fill="#555555" x="613" y="197" width="163" height="61"></rect>
+            <rect id="Rectangle" fill="#555555" x="306" y="394" width="163" height="61"></rect>
+            <g id="text" transform="translate(35.000000, 18.000000)" font-size="16" font-family="SourceSansPro-Regular, Source Sans Pro" fill="#FFFFFF" font-weight="normal">
+                <text id="pdf-converter">
+                    <tspan x="0.508" y="213">pdf-converter</tspan>
+                </text>
+                <text id="auth-server">
+                    <tspan x="313.932" y="213">auth-server</tspan>
+                </text>
+                <text id="frontend">
+                    <tspan x="323.688" y="16">frontend</tspan>
+                </text>
+                <text id="backend">
+                    <tspan x="630.572" y="213">backend</tspan>
+                </text>
+                <text id="GitHub-API">
+                    <tspan x="316.204" y="410">GitHub API</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="static-big-picture" transform="translate(11.000000, 10.000000)">
+            <polygon id="Rectangle-2" fill="#F4F4F4" points="0 0 252.549352 0 272.567358 31.5 252.549352 63 0 63"></polygon>
+            <polygon id="Rectangle-2" fill="#F4F4F4" points="267.855373 0 520.404725 0 540.422731 31.5 520.404725 63 267.855373 63 286.307228 31.5"></polygon>
+            <polygon id="Rectangle-2" fill="#F4F4F4" points="534.75412 0 787.303472 0 807.321478 31.5 787.303472 63 534.75412 63 553.205975 31.5"></polygon>
+            <g id="text" transform="translate(15.000000, 11.000000)" font-size="16" font-family="SourceSansPro-Regular, Source Sans Pro" font-weight="normal">
+                <text id="GitHub-OAuth-Web-App" fill="#BC00B9">
+                    <tspan x="0" y="18">GitHub OAuth Web Application Flow</tspan>
+                    <tspan x="0" y="38" font-family="SourceSansPro-It, Source Sans Pro" font-size="12" font-style="italic">Login via GitHub and obtain  GitHub Access Token</tspan>
+                </text>
+                <text id="FooBar-Auth-Server-S" fill="#002DBC">
+                    <tspan x="550" y="16">FooBar Auth-Server </tspan>
+                    <tspan x="550" y="36">Stateless JWT Authentication</tspan>
+                </text>
+                <text id="GitHub-API-User-and" fill="#009747">
+                    <tspan x="279" y="18">GitHub API User and Organizations</tspan>
+                    <tspan x="279" y="38" font-family="SourceSansPro-It, Source Sans Pro" font-size="12" font-style="italic">Retrieve Username and Organizations from API</tspan>
+                </text>
+            </g>
+        </g>
+        <rect id="hg-loading" fill="#555555" x="0" y="619" width="10" height="10"></rect>
+    </g>
+    <script type="text/javascript"
+            xlink:href="https://unpkg.com/hirngespinst@0.0.11/dist/showWithDelay.min.js"
+            href="https://unpkg.com/hirngespinst@0.0.11/dist/showWithDelay.min.js"
+    />
+    <script type="text/javascript">
+        Hirngespinst.showWithDelay({
+            frameAutoHide: true
+        });
+    </script>
+</svg>
