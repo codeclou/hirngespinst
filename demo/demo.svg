@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" type="text/css"?>
+<?xml-stylesheet href="https://unpkg.com/hirngespinst@0.1.0/dist/hirngespinst.min.css" type="text/css"?>
+<svg width="800px" height="500px" viewBox="0 0 800 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>demo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="frame-04" transform="translate(33.000000, 183.000000)">
+            <polygon id="Rectangle" fill="#F46F2C" transform="translate(199.190460, 137.717332) rotate(180.000000) translate(-199.190460, -137.717332) " points="1.13686838e-13 2.84217094e-14 398.38092 2.84217094e-14 398.38092 199 290.575427 275.434663 184.853572 199 1.13686838e-13 199 68.1132249 98.3688271"></polygon>
+            <text id="Test" font-family="SourceSansPro-Light, Source Sans Pro" font-size="40" font-weight="300" fill="#FFFFFF">
+                <tspan x="145.02" y="229">Test</tspan>
+            </text>
+        </g>
+        <g id="frame-03" transform="translate(384.000000, 259.000000)">
+            <polygon id="Rectangle" fill="#AC1F96" transform="translate(191.338515, 99.500000) scale(-1, 1) translate(-191.338515, -99.500000) " points="0 0 110.559341 75.8655181 213.37106 0 314 0 382.67703 99.5 314 199 0 199"></polygon>
+            <text id="Implementation" font-family="SourceSansPro-Light, Source Sans Pro" font-size="40" font-weight="300" fill="#FFFFFF">
+                <tspan x="96.26" y="153">Implementation</tspan>
+            </text>
+        </g>
+        <g id="frame-02" transform="translate(368.000000, 41.000000)">
+            <polygon id="Rectangle" fill="#27629F" points="5.68434189e-14 4.26325641e-14 398.38092 4.26325641e-14 398.38092 199 290.575427 275.434663 184.853572 199 5.68434189e-14 199 68.1132249 98.3688271"></polygon>
+            <text id="Design" font-family="SourceSansPro-Light, Source Sans Pro" font-size="40" font-weight="300" fill="#FFFFFF">
+                <tspan x="188.7" y="84">Design</tspan>
+            </text>
+        </g>
+        <g id="frame-01" transform="translate(33.000000, 41.000000)">
+            <polygon id="Rectangle" fill="#1DA276" transform="translate(191.338515, 99.500000) scale(-1, 1) rotate(180.000000) translate(-191.338515, -99.500000) " points="1.77635684e-14 2.84217094e-14 110.559341 75.8655181 213.37106 2.84217094e-14 314 2.84217094e-14 382.67703 99.5 314 199 1.77635684e-14 199"></polygon>
+            <text id="Analysis" font-family="SourceSansPro-Light, Source Sans Pro" font-size="40" font-weight="300" fill="#FFFFFF">
+                <tspan x="97.12" y="84">Analysis</tspan>
+            </text>
+        </g>
+        <rect id="hg-loading" fill="#FFA97D" x="0" y="488" width="8" height="12"></rect>
+    </g>
+    <script type="text/javascript"
+        xlink:href="https://unpkg.com/hirngespinst@0.1.0/dist/hirngespinst.min.js"
+        href="https://unpkg.com/hirngespinst@0.1.0/dist/hirngespinst.min.js"
+    />
+    <script type="text/javascript">
+        new hirngespinst();
+    </script>
+</svg>
