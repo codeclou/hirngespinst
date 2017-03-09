@@ -20,12 +20,16 @@ class Hirngespinst {
         }, options);
         self.fixTspanLeadingWhitespace();
         self.preInitialize(config);
-        self.initialize(config);
-        setInterval(self.initialize, self.state.overallAnimationDurationInSeconds * 1000, config);
+        self.initialize(config, self);
+        setInterval(self.initialize, self.state.overallAnimationDurationInSeconds * 1000, config, self);
     }
 
-    initialize(config) {
-        const self = this;
+    /**
+     * Called multiple times by setInterval, therefore we pass 'self'
+     * @param config
+     * @param self
+     */
+    initialize(config, self) {
         self.initializeFrameAnimations(config);
         self.initializeLoadingBarAnimation(config);
     }
@@ -110,7 +114,7 @@ class Hirngespinst {
                 clearInterval(self.state.loadingBarIntervalReference);
                 self.state.loadingBarIntervalReference = null;
             }
-            const updateLoadingBar = function(config) {
+            const updateLoadingBar = function(config, self) {
                 if (self.state.loadingBarUpdateCount <= self.state.overallAnimationDurationInSeconds) {
                     self.state.loadingBarUpdateCount = self.state.loadingBarUpdateCount + 1;
                     const percentage = self.state.loadingBarUpdateCount / self.state.overallAnimationDurationInSeconds * 100;
@@ -118,7 +122,7 @@ class Hirngespinst {
                 }
             };
             // updateLoadingBar every second
-            self.state.loadingBarIntervalReference = setInterval(updateLoadingBar, 1000, config);
+            self.state.loadingBarIntervalReference = setInterval(updateLoadingBar, 1000, config, self);
         }
     };
 
