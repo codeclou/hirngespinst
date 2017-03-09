@@ -22,7 +22,7 @@ You can easily create such above graphic with **[Sketch](https://www.sketchapp.c
 
 &nbsp;
 
-**(1)** Download the example [:closed_book: **`demo.sketch`**](https://codeclou.github.io/hirngespinst/demo/demo.sketch) file.
+**(1)** Download the example [:closed_book:**`demo.sketch`**](https://codeclou.github.io/hirngespinst/demo/demo.sketch) file.
 
 &nbsp;
 
