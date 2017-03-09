@@ -1,10 +1,8 @@
 [![](https://codeclou.github.io/hirngespinst/img/hirngespinst-logo.svg)](https://github.com/codeclou/hirngespinst/)
 
-
-&nbsp;
-
 > create self-contained »slideshow-like« SVG infographics with ease
 
+&nbsp;
 
 **:sparkles: [DEMO](https://unpkg.com/hirngespinst@0.0.11/demo/demo-showWithDelay--withAutoHide.svg)**
 
