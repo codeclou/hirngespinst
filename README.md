@@ -28,6 +28,9 @@
  * convention over configuration - works out of the box
  * progress bar is animated
  * automatic looping
+ * minified: js 3.6 KB css 0.6 KB total 4.2 KB
+ * gzipped: js 1.4 KB css 0.3 KB total 1.7 KB
+
 
 -----
 
