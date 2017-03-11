@@ -9,7 +9,7 @@ npm start
 
 Goto
 
- * [http://localhost:7676/test/test-showWithDelay.svg](http://localhost:7676/test/test-showWithDelay.svg) 
+ * [http://localhost:7676/test/](http://localhost:7676/test/) 
 
 
 &nbsp;

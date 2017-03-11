@@ -10,11 +10,17 @@ g[id^="frame-"] {
     opacity: 0;
 }
 
-/* this does not work in all browsers to preserve whitespace as expected!
-text {
-    white-space: pre;
+#hg-next, #hg-restart, #hg-prev, #hg-play, #hg-pause {
+    cursor: pointer;
 }
-*/
+
+#hg-next:hover #bg,
+#hg-restart:hover #bg,
+#hg-prev:hover #bg,
+#hg-play:hover #bg,
+#hg-pause:hover #bg {
+    fill:#969696;
+}
 
 #hg-loading {
     transition: width 0.5s;
@@ -23,31 +29,34 @@ text {
 /* SHOW FRAME */
 @keyframes showFrame {
     0%   { opacity: 0; }
-    10%  { opacity: 1; }
     100% { opacity: 1; }
 }
 .showFrameAnimation {
-    opacity: 0;
+
     animation-name: showFrame;
     animation-iteration-count: 1;
     animation-direction: alternate;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+.show {
+    opacity: 1;
 }
 
 
-/* SHOW FRAME AND HIDE */
-@keyframes showFrameAndHide {
-    0%   { opacity: 0; }
-    5%  { opacity: 1; }
-    95%  { opacity: 1; }
+/* HIDE FRAME */
+@keyframes hideFrame {
+    0%   { opacity: 1; }
     100% { opacity: 0; }
 }
-.showFrameAndHideAnimation {
-    opacity: 0;
-    animation-name: showFrameAndHide;
+.hideFrameAnimation {
+
+    animation-name: hideFrame;
     animation-iteration-count: 1;
     animation-direction: alternate;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
+    animation-duration: 1s;
 }

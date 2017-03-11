@@ -34,8 +34,8 @@
         <rect id="hg-loading" fill="#FFA97D" x="0" y="488" width="8" height="12"></rect>
     </g>
     <script type="text/javascript"
-            xlink:href="../dist/hirngespinst.min.js"
-            href="../dist/hirngespinst.min.js"
+            xlink:href="../dist/hirngespinst.js"
+            href="../dist/hirngespinst.js"
     />
     <script type="text/javascript">
         new hirngespinst();

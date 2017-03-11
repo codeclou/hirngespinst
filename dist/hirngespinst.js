@@ -66,34 +66,93 @@
 
             var self = this;
             self.state = {
+                tick: null,
                 amountFrames: 0,
-                loadingBarUpdateCount: 0,
-                loadingBarIntervalReference: null,
+                currentFrame: null,
+                previousFrame: null,
+                isPlaying: true,
+                manualPrevOrNextClick: false,
+                updateLock: false,
                 overallAnimationDurationInSeconds: 0
             };
-            var config = _extends({}, {
+            self.config = _extends({}, {
                 frameAnimationDurationInSeconds: 8,
                 framePauseBetweenFramesInSeconds: 1,
                 frameAutoHide: false
             }, options);
             self.fixTspanLeadingWhitespace();
-            self.preInitialize(config);
-            self.initialize(config, self);
-            setInterval(self.initialize, self.state.overallAnimationDurationInSeconds * 1000, config, self);
+            self.preInitialize();
+            self.initializePlayPauseButtons();
+            self.initializePrevNextButtons();
+            setInterval(self.update, 100, self, 1);
         }
 
         /**
-         * Called multiple times by setInterval, therefore we pass 'self'
-         * @param config
+         * Called every 0.5 seconds.
+         *
          * @param self
+         * @param direction {int} 1 for forward direction; -1 for backward direction
          */
 
 
         _createClass(Hirngespinst, [{
-            key: 'initialize',
-            value: function initialize(config, self) {
-                self.initializeFrameAnimations(config);
-                self.initializeLoadingBarAnimation(config);
+            key: 'update',
+            value: function update(self, direction) {
+                var tickModulo = 24;
+
+                //
+                // TICK
+                //
+                if (self.state.tick !== null && self.state.manualPrevOrNextClick === false) {
+                    self.state.tick = self.state.tick + 1;
+                }
+                if (self.state.tick === null) {
+                    // Start to play immediately
+                    self.state.tick = tickModulo;
+                }
+
+                //
+                // FRAME LOGIC
+                //
+                if (self.state.updateLock === false && (self.state.tick % tickModulo === 0 && self.state.isPlaying === true || self.state.manualPrevOrNextClick === true)) {
+                    //
+                    // INIT LOCKS
+                    //
+                    self.state.updateLock = true;
+                    self.state.currentFrame = self.state.currentFrame + direction;
+
+                    //
+                    // ONLY WHEN PLAYING OR MANUAL ACTION
+                    //
+                    if (self.state.isPlaying || self.state.manualPrevOrNextClick === true) {
+                        //
+                        // HIDE
+                        //
+                        if (self.config.frameAutoHide === true) {
+                            self.animateSingleFrame(self.state.previousFrame, 'hide');
+                        }
+                        //
+                        // RESTART LOOP
+                        //
+                        if (self.state.currentFrame > self.state.amountFrames) {
+                            self.state.currentFrame = 1;
+                        }
+                        if (self.state.currentFrame < 1) {
+                            self.state.currentFrame = self.state.amountFrames;
+                        }
+                        //
+                        // SHOW
+                        //
+                        self.animateSingleFrame(self.state.currentFrame, 'show');
+                        self.updateFrameLabel();
+                    }
+                    //
+                    // RELEASE LOCKS
+                    //
+                    self.state.previousFrame = self.state.currentFrame;
+                    self.state.manualPrevOrNextClick = false;
+                    self.state.updateLock = false;
+                }
             }
         }, {
             key: 'fixTspanLeadingWhitespace',
@@ -137,59 +196,80 @@
                 return 'frame-' + number;
             }
         }, {
-            key: 'initializeFrameAnimations',
-            value: function initializeFrameAnimations(config) {
+            key: 'animateSingleFrame',
+            value: function animateSingleFrame(frameNumber, showOrHide) {
                 var self = this;
-                for (var i = 1; i < self.state.amountFrames + 1; i++) {
-                    var frame = document.getElementById(self.getFrameIdByNumber(i));
+                var frame = document.getElementById(self.getFrameIdByNumber(frameNumber));
+                if (frame !== null) {
                     frame.removeAttribute('class');
-                    frame.removeAttribute('style');
-                    var delay = (config.framePauseBetweenFramesInSeconds + config.frameAnimationDurationInSeconds) * (i - 1);
                     // We need a timeout since the SVG DOM does not seem to get updated otherwise
-                    setTimeout(function (frame, delay, frameAnimationDurationInSeconds) {
-                        frame.style["animation-delay"] = delay + 's';
-                        frame.style["animation-duration"] = frameAnimationDurationInSeconds + 's';
-                        frame.style["opacity"] = 0;
-                        var animationClass = 'showFrameAnimation';
-                        if (config.frameAutoHide) {
-                            animationClass = 'showFrameAndHideAnimation';
+                    console.log(frameNumber, showOrHide);
+                    setTimeout(function (frame, showOrHide) {
+                        if (showOrHide === 'show') {
+                            frame.setAttribute('class', 'showFrameAnimation');
+                            frame.style.opacity = 1;
+                        } else {
+                            frame.setAttribute('class', 'hideFrameAnimation');
+                            frame.style.opacity = 0;
                         }
-                        frame.setAttribute('class', animationClass);
-                    }, 300, frame, delay, config.frameAnimationDurationInSeconds);
+                    }, 200, frame, showOrHide);
                 }
             }
         }, {
-            key: 'initializeLoadingBarAnimation',
-            value: function initializeLoadingBarAnimation(config) {
+            key: 'updateFrameLabel',
+            value: function updateFrameLabel() {
                 var self = this;
-                var loadingBar = document.getElementById('hg-loading');
-                if (loadingBar !== null) {
-                    self.state.loadingBarUpdateCount = 0;
-                    loadingBar.setAttribute('width', '0%');
-                    if (self.state.loadingBarIntervalReference !== undefined && self.state.loadingBarIntervalReference !== null) {
-                        clearInterval(self.state.loadingBarIntervalReference);
-                        self.state.loadingBarIntervalReference = null;
-                    }
-                    var updateLoadingBar = function updateLoadingBar(config, self) {
-                        if (self.state.loadingBarUpdateCount <= self.state.overallAnimationDurationInSeconds) {
-                            self.state.loadingBarUpdateCount = self.state.loadingBarUpdateCount + 1;
-                            var percentage = self.state.loadingBarUpdateCount / self.state.overallAnimationDurationInSeconds * 100;
-                            loadingBar.setAttribute('width', percentage + '%');
-                        }
+                var hgFrame = document.getElementById('hg-frame');
+                if (hgFrame !== null) {
+                    var frameLabel = hgFrame.querySelector('tspan');
+                    frameLabel.textContent = self.state.currentFrame;
+                }
+            }
+        }, {
+            key: 'initializePrevNextButtons',
+            value: function initializePrevNextButtons() {
+                var self = this;
+                var next = document.getElementById('hg-next');
+                if (next !== null) {
+                    next.onclick = function () {
+                        self.state.manualPrevOrNextClick = true;
+                        self.update(self, +1);
                     };
-                    // updateLoadingBar every second
-                    self.state.loadingBarIntervalReference = setInterval(updateLoadingBar, 1000, config, self);
+                }
+                var prev = document.getElementById('hg-prev');
+                if (prev !== null) {
+                    prev.onclick = function () {
+                        self.state.manualPrevOrNextClick = true;
+                        self.update(self, -1);
+                    };
+                }
+            }
+        }, {
+            key: 'initializePlayPauseButtons',
+            value: function initializePlayPauseButtons() {
+                var self = this;
+                var play = document.getElementById('hg-play');
+                if (play !== null) {
+                    play.onclick = function () {
+                        self.state.isPlaying = true;
+                    };
+                }
+                var pause = document.getElementById('hg-pause');
+                if (pause !== null) {
+                    pause.onclick = function () {
+                        self.state.isPlaying = false;
+                    };
                 }
             }
         }, {
             key: 'preInitialize',
-            value: function preInitialize(hirngespinstConfig) {
+            value: function preInitialize() {
                 var self = this;
                 var hirngespinstFrames = self.getElementsStartsWithId('frame-');
                 if (hirngespinstFrames !== undefined && hirngespinstFrames !== null && hirngespinstFrames.length > 0) {
                     self.state.amountFrames = hirngespinstFrames.length;
                 }
-                self.state.overallAnimationDurationInSeconds = (hirngespinstConfig.frameAnimationDurationInSeconds + hirngespinstConfig.framePauseBetweenFramesInSeconds) * self.state.amountFrames;
+                self.state.overallAnimationDurationInSeconds = (self.config.frameAnimationDurationInSeconds + self.config.framePauseBetweenFramesInSeconds) * self.state.amountFrames;
             }
         }]);
 
