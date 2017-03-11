@@ -100,7 +100,9 @@ You can easily create such above graphic with **[Sketch](https://www.sketchapp.c
 :black_large_square:**(6)** Now use your SVG like so in your website
 
 ```html
-<img src="http://myserver/my.svg" />
+WILL NOT WORK: <img src="http://myserver/my.svg" />
+
+WILL WORK:     <object data="http://myserver/my.svg" type="image/svg+xml"></object>
 ```
 
 &nbsp;
