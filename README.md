@@ -10,6 +10,7 @@
   <a href="https://codeclou.github.io/hirngespinst/demo/demo.svg"><img src="https://codeclou.github.io//hirngespinst/img/demo.gif?v2" width="80%"/></a>
 </p>
 
+<object data="https://codeclou.github.io/hirngespinst/demo/demo.svg" type="image/svg+xml"></object>
 
 
 -----
@@ -141,6 +142,18 @@ Works in all modern browsers and was tested in the following versions
 ![](https://codeclou.github.io/hirngespinst/img/supported-browsers.svg)
 
 Note: Internally CSS animations with `@keyframe` are used since SMIL browser-support will fade out.  
+
+-----
+
+
+&nbsp;
+
+
+### Known Limitations
+
+ * IE11: 
+  * when having multiple objects on the same page webfont fails for either one
+  * Solution: load webfont on the page itself.
 
 
 -----

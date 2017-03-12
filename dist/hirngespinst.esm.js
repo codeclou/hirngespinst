@@ -67,7 +67,6 @@ class Hirngespinst {
             // ONLY WHEN PLAYING OR MANUAL ACTION
             //
             if (self.state.isPlaying || self.state.manualPrevOrNextClick === true) {
-
                 //
                 // RESTART LOOP
                 //
@@ -145,7 +144,6 @@ class Hirngespinst {
         if (frame !== null) {
             frame.removeAttribute('class');
             // We need a timeout since the SVG DOM does not seem to get updated otherwise
-            console.log(frameNumber, showOrHide);
             setTimeout(function (frame, showOrHide) {
                 if (showOrHide === 'show') {
                     frame.setAttribute('class', 'showFrameAnimation');
