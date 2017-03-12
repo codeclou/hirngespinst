@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800px" height="500px" viewBox="0 0 800 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>demo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="frame-04" transform="translate(33.000000, 183.000000)">
+            <polygon id="Rectangle" fill="#F46F2C" transform="translate(199.190460, 137.717332) rotate(180.000000) translate(-199.190460, -137.717332) " points="1.13686838e-13 2.84217094e-14 398.38092 2.84217094e-14 398.38092 199 290.575427 275.434663 184.853572 199 1.13686838e-13 199 68.1132249 98.3688271"></polygon>
+            <text id="Test" font-family="SourceSansPro-Light, Source Sans Pro" font-size="40" font-weight="300" fill="#FFFFFF">
+                <tspan x="145.02" y="229">Test</tspan>
+            </text>
+        </g>
+        <g id="frame-03" transform="translate(384.000000, 259.000000)">
+            <polygon id="Rectangle" fill="#AC1F96" transform="translate(191.338515, 99.500000) scale(-1, 1) translate(-191.338515, -99.500000) " points="0 0 110.559341 75.8655181 213.37106 0 314 0 382.67703 99.5 314 199 0 199"></polygon>
+            <text id="Implementation" font-family="SourceSansPro-Light, Source Sans Pro" font-size="40" font-weight="300" fill="#FFFFFF">
+                <tspan x="96.26" y="153">Implementation</tspan>
+            </text>
+        </g>
+        <g id="frame-02" transform="translate(368.000000, 41.000000)">
+            <polygon id="Rectangle" fill="#27629F" points="5.68434189e-14 4.26325641e-14 398.38092 4.26325641e-14 398.38092 199 290.575427 275.434663 184.853572 199 5.68434189e-14 199 68.1132249 98.3688271"></polygon>
+            <text id="Design" font-family="SourceSansPro-Light, Source Sans Pro" font-size="40" font-weight="300" fill="#FFFFFF">
+                <tspan x="188.7" y="84">Design</tspan>
+            </text>
+        </g>
+        <g id="frame-01" transform="translate(33.000000, 41.000000)">
+            <polygon id="Rectangle" fill="#1DA276" transform="translate(191.338515, 99.500000) scale(-1, 1) rotate(180.000000) translate(-191.338515, -99.500000) " points="1.77635684e-14 2.84217094e-14 110.559341 75.8655181 213.37106 2.84217094e-14 314 2.84217094e-14 382.67703 99.5 314 199 1.77635684e-14 199"></polygon>
+            <text id="Analysis" font-family="SourceSansPro-Light, Source Sans Pro" font-size="40" font-weight="300" fill="#FFFFFF">
+                <tspan x="97.12" y="84">Analysis</tspan>
+            </text>
+        </g>
+        <g id="hg-controls" transform="translate(3.000000, 484.000000)">
+            <rect id="hg-loading" fill="#555555" x="91" y="1" width="8" height="12"></rect>
+            <g id="hg-restart" transform="translate(0.000000, 1.000000)">
+                <rect id="bg" fill="#555555" x="0" y="0" width="12" height="12"></rect>
+                <path d="M5.44782881,2.99171947 C5.45620583,2.98512048 5.46464427,2.97844075 5.47314453,2.97167969 C5.67603599,2.8103007 8.46648396,1.84939538 8.46648396,6.06416576 C8.46648396,10.2789362 3.43960956,9.88641111 3.23851791,6.06416576 C2.9391789,6.06416576 2.93157272,6.03200438 2.73781527,6.06416576 C2.27239109,6.14142053 1.8288498,6.2313754 1.8288498,6.2313754 C2.1481023,11.4273344 10.0003055,11.6300502 10.0003055,6.06416576 C10.0003055,0.498356434 5.5551286,1.32449311 4.68647045,2.09413672 L3.75838873,1 L2.80242115,4.93637444 L6.69291799,4.4595835 L5.44782881,2.99171947 Z" id="icon" fill="#FFFFFF"></path>
+            </g>
+            <g id="hg-prev" transform="translate(14.000000, 1.000000)">
+                <rect id="bg" fill="#555555" x="0" y="0" width="12" height="12"></rect>
+                <path d="M4,6 L10,2 L10,10 L4,6 Z M2,2 L4,2 L4,10 L2,10 L2,2 Z" id="icon" fill="#FFFFFF"></path>
+            </g>
+            <g id="hg-next" transform="translate(62.000000, 7.000000) scale(-1, 1) translate(-62.000000, -7.000000) translate(56.000000, 1.000000)">
+                <rect id="bg" fill="#555555" x="0" y="0" width="12" height="12"></rect>
+                <path d="M4,6 L10,2 L10,10 L4,6 Z M2,2 L4,2 L4,10 L2,10 L2,2 Z" id="icon" fill="#FFFFFF"></path>
+            </g>
+            <g id="hg-play" transform="translate(42.000000, 1.000000)">
+                <rect id="bg" fill="#555555" x="0" y="0" width="12" height="12"></rect>
+                <polygon id="icon" fill="#FFFFFF" points="2 1.97757673 9.88834332 5.98878836 2 10"></polygon>
+            </g>
+            <g id="hg-pause" transform="translate(28.000000, 1.000000)">
+                <rect id="bg" fill="#555555" x="0" y="0" width="12" height="12"></rect>
+                <path d="M3,2 L5,2 L5,10 L3,10 L3,2 Z M7,2 L9,2 L9,10 L7,10 L7,2 Z" id="icon" fill="#FFFFFF"></path>
+            </g>
+            <g id="hg-frame" transform="translate(70.000000, 0.000000)">
+                <rect id="bg" fill="#555555" x="0" y="1" width="19" height="12"></rect>
+                <text id="text" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="10" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="3" y="10">1</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
