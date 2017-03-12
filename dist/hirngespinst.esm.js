@@ -7,7 +7,7 @@ class Hirngespinst {
 
     constructor(options) {
         const self = this;
-        self.state = {
+        self.initialState = {
             tick: null,
             amountFrames: 0,
             currentFrame: null,
@@ -17,6 +17,7 @@ class Hirngespinst {
             updateLock: false,
             overallAnimationDurationInSeconds: 0
         };
+        self.state = Object.assign({}, self.initialState);
         self.config = Object.assign({}, {
             frameAnimationDurationInSeconds: 8,
             framePauseBetweenFramesInSeconds: 1,
@@ -66,20 +67,23 @@ class Hirngespinst {
             // ONLY WHEN PLAYING OR MANUAL ACTION
             //
             if (self.state.isPlaying || self.state.manualPrevOrNextClick === true) {
+
+                //
+                // RESTART LOOP
+                //
+                if (self.state.currentFrame > self.state.amountFrames) {
+                    self.resetAllFrames();
+                    self.state.previousFrame = null;
+                    self.state.currentFrame = 1;
+                }
+                if (self.state.currentFrame < 1) {
+                    self.state.currentFrame = self.state.amountFrames;
+                }
                 //
                 // HIDE
                 //
                 if (self.config.frameAutoHide === true) {
                     self.animateSingleFrame(self.state.previousFrame, 'hide');
-                }
-                //
-                // RESTART LOOP
-                //
-                if (self.state.currentFrame > self.state.amountFrames) {
-                    self.state.currentFrame = 1;
-                }
-                if (self.state.currentFrame < 1) {
-                    self.state.currentFrame = self.state.amountFrames;
                 }
                 //
                 // SHOW
@@ -181,6 +185,25 @@ class Hirngespinst {
         }
     }
 
+    resetAllFrames() {
+        const self = this;
+        const hirngespinstFrames = self.getElementsStartsWithId('frame-');
+        if (hirngespinstFrames !== undefined && hirngespinstFrames !== null && hirngespinstFrames.length > 0) {
+            for (let i=0;i<hirngespinstFrames.length;i++) {
+                hirngespinstFrames[i].removeAttribute('class');
+                hirngespinstFrames[i].removeAttribute('style');
+            }
+        }
+    }
+
+    resetAnimationCompletely() {
+        const self = this;
+        self.resetAllFrames();
+        self.state = Object.assign({}, self.initialState);
+        self.preInitialize();
+        self.update(self, 1);
+    }
+
     initializePlayPauseButtons() {
         const self = this;
         const play = document.getElementById('hg-play');
@@ -193,6 +216,12 @@ class Hirngespinst {
         if (pause !== null) {
             pause.onclick = function () {
                 self.state.isPlaying = false;
+            };
+        }
+        const restart = document.getElementById('hg-restart');
+        if (restart !== null) {
+            restart.onclick = function () {
+                self.resetAnimationCompletely();
             };
         }
     }

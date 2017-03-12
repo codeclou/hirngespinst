@@ -65,7 +65,7 @@
             _classCallCheck(this, Hirngespinst);
 
             var self = this;
-            self.state = {
+            self.initialState = {
                 tick: null,
                 amountFrames: 0,
                 currentFrame: null,
@@ -75,6 +75,7 @@
                 updateLock: false,
                 overallAnimationDurationInSeconds: 0
             };
+            self.state = _extends({}, self.initialState);
             self.config = _extends({}, {
                 frameAnimationDurationInSeconds: 8,
                 framePauseBetweenFramesInSeconds: 1,
@@ -125,20 +126,23 @@
                     // ONLY WHEN PLAYING OR MANUAL ACTION
                     //
                     if (self.state.isPlaying || self.state.manualPrevOrNextClick === true) {
+
+                        //
+                        // RESTART LOOP
+                        //
+                        if (self.state.currentFrame > self.state.amountFrames) {
+                            self.resetAllFrames();
+                            self.state.previousFrame = null;
+                            self.state.currentFrame = 1;
+                        }
+                        if (self.state.currentFrame < 1) {
+                            self.state.currentFrame = self.state.amountFrames;
+                        }
                         //
                         // HIDE
                         //
                         if (self.config.frameAutoHide === true) {
                             self.animateSingleFrame(self.state.previousFrame, 'hide');
-                        }
-                        //
-                        // RESTART LOOP
-                        //
-                        if (self.state.currentFrame > self.state.amountFrames) {
-                            self.state.currentFrame = 1;
-                        }
-                        if (self.state.currentFrame < 1) {
-                            self.state.currentFrame = self.state.amountFrames;
                         }
                         //
                         // SHOW
@@ -245,6 +249,27 @@
                 }
             }
         }, {
+            key: 'resetAllFrames',
+            value: function resetAllFrames() {
+                var self = this;
+                var hirngespinstFrames = self.getElementsStartsWithId('frame-');
+                if (hirngespinstFrames !== undefined && hirngespinstFrames !== null && hirngespinstFrames.length > 0) {
+                    for (var i = 0; i < hirngespinstFrames.length; i++) {
+                        hirngespinstFrames[i].removeAttribute('class');
+                        hirngespinstFrames[i].removeAttribute('style');
+                    }
+                }
+            }
+        }, {
+            key: 'resetAnimationCompletely',
+            value: function resetAnimationCompletely() {
+                var self = this;
+                self.resetAllFrames();
+                self.state = _extends({}, self.initialState);
+                self.preInitialize();
+                self.update(self, 1);
+            }
+        }, {
             key: 'initializePlayPauseButtons',
             value: function initializePlayPauseButtons() {
                 var self = this;
@@ -258,6 +283,12 @@
                 if (pause !== null) {
                     pause.onclick = function () {
                         self.state.isPlaying = false;
+                    };
+                }
+                var restart = document.getElementById('hg-restart');
+                if (restart !== null) {
+                    restart.onclick = function () {
+                        self.resetAnimationCompletely();
                     };
                 }
             }

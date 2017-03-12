@@ -32,17 +32,12 @@ g[id^="frame-"] {
     100% { opacity: 1; }
 }
 .showFrameAnimation {
-
     animation-name: showFrame;
     animation-iteration-count: 1;
     animation-direction: alternate;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
     animation-duration: 1s;
-}
-
-.show {
-    opacity: 1;
 }
 
 
@@ -52,7 +47,6 @@ g[id^="frame-"] {
     100% { opacity: 0; }
 }
 .hideFrameAnimation {
-
     animation-name: hideFrame;
     animation-iteration-count: 1;
     animation-direction: alternate;
