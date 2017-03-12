@@ -148,6 +148,7 @@
                         //
                         self.animateSingleFrame(self.state.currentFrame, 'show');
                         self.updateFrameLabel();
+                        self.animateProgressBar();
                     }
                     //
                     // RELEASE LOCKS
@@ -288,6 +289,16 @@
                     restart.onclick = function () {
                         self.resetAnimationCompletely();
                     };
+                }
+            }
+        }, {
+            key: 'animateProgressBar',
+            value: function animateProgressBar() {
+                var self = this;
+                var loadingBar = document.getElementById('hg-progress');
+                if (loadingBar !== null) {
+                    var percentage = self.state.currentFrame / self.state.amountFrames * 100;
+                    loadingBar.setAttribute('width', percentage + '%');
                 }
             }
         }, {

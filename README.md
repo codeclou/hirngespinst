@@ -10,8 +10,6 @@
   <a href="https://codeclou.github.io/hirngespinst/demo/demo.svg"><img src="https://codeclou.github.io//hirngespinst/img/demo.gif?v2" width="80%"/></a>
 </p>
 
-<object data="https://codeclou.github.io/hirngespinst/demo/demo.svg" type="image/svg+xml"></object>
-
 
 -----
 

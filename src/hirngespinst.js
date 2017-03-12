@@ -89,6 +89,7 @@ class Hirngespinst {
                 //
                 self.animateSingleFrame(self.state.currentFrame, 'show');
                 self.updateFrameLabel();
+                self.animateProgressBar();
             }
             //
             // RELEASE LOCKS
@@ -225,37 +226,21 @@ class Hirngespinst {
     }
 
     /**
-     * LOADING BAR LOGIC
+     * PROGRESS BAR LOGIC
      *
      * NOTE: Since CSS does not apply to `width` elements of RECT SVG-elements we need
      *       to write the animation ourselves in JS. (At least in Firefox the CSS approach
      *       does not work at the time of writing this code).
      *
-     * @param config
      */
-    /*
-    initializeLoadingBarAnimation(config) {
+    animateProgressBar() {
         const self = this;
-        const loadingBar = document.getElementById('hg-loading');
+        const loadingBar = document.getElementById('hg-progress');
         if (loadingBar !== null) {
-            self.state.loadingBarUpdateCount = 0;
-            loadingBar.setAttribute('width', '0%');
-            if (self.state.loadingBarIntervalReference !== undefined && self.state.loadingBarIntervalReference !== null) {
-                clearInterval(self.state.loadingBarIntervalReference);
-                self.state.loadingBarIntervalReference = null;
-            }
-            const updateLoadingBar = function(config, self) {
-                if (self.state.loadingBarUpdateCount <= self.state.overallAnimationDurationInSeconds) {
-                    self.state.loadingBarUpdateCount = self.state.loadingBarUpdateCount + 1;
-                    const percentage = self.state.loadingBarUpdateCount / self.state.overallAnimationDurationInSeconds * 100;
-                    loadingBar.setAttribute('width', percentage + '%');
-                }
-            };
-            // updateLoadingBar every second
-            self.state.loadingBarIntervalReference = setInterval(updateLoadingBar, 1000, config, self);
+            const percentage = self.state.currentFrame / self.state.amountFrames * 100;
+            loadingBar.setAttribute('width', percentage + '%');
         }
     };
-    */
 
     /**
      * CALCULATE OVERALL ANIMATION DURATION AND AMOUNT OF FRAMES
