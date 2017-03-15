@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" type="text/css"?>
+<?xml-stylesheet href="https://unpkg.com/hirngespinst@0.2.0/dist/hirngespinst.min.css" type="text/css"?>
 <svg width="800px" height="500px" viewBox="0 0 800 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
     <title>demo</title>
@@ -59,4 +61,13 @@
             </g>
         </g>
     </g>
+    <script type="text/javascript"
+        xlink:href="https://unpkg.com/hirngespinst@0.2.0/dist/hirngespinst.min.js"
+        href="https://unpkg.com/hirngespinst@0.2.0/dist/hirngespinst.min.js"
+    />
+    <script type="text/javascript">
+        new hirngespinst({
+          frameAutoHide: true
+        });
+    </script>
 </svg>
