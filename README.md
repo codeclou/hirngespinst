@@ -53,9 +53,9 @@ You can easily create such above graphic with **[Sketch](https://www.sketchapp.c
 
 &nbsp;
 
-:black_large_square:**(3)** Create a rect with name `hg-loading` placed in the bottom left. This rect will then be expanded to 100% width as an animation.
+:black_large_square:**(3)** OPTIONAL: Create a rect with name `hg-progress` placed in the bottom left. This rect will then be expanded to 100% width as an animation.
  
-![](https://codeclou.github.io/hirngespinst/img/02.png)
+![](https://codeclou.github.io/hirngespinst/img/02.png?v2)
 
 &nbsp;
 
