@@ -31,7 +31,7 @@
                 <tspan x="97.12" y="84">Analysis</tspan>
             </text>
         </g>
-        <rect id="hg-loading" fill="#FFA97D" x="0" y="488" width="8" height="12"></rect>
+        <rect id="hg-progress" fill="#FFA97D" x="0" y="488" width="8" height="12"></rect>
     </g>
     <script type="text/javascript"
         xlink:href="https://unpkg.com/hirngespinst@0.2.0/dist/hirngespinst.min.js"
