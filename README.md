@@ -43,7 +43,7 @@ You can easily create such above graphic with **[Sketch](https://www.sketchapp.c
 
 &nbsp;
 
-:black_large_square:**(1)** Download the example [:closed_book:**`demo.sketch`**](https://codeclou.github.io/hirngespinst/demo/demo.sketch) file.
+:black_large_square:**(1)** Download the example [:closed_book:**`demo.sketch`**](https://codeclou.github.io/hirngespinst/demo/demo.sketch) or [:closed_book:**`demo--withControls.sketch`**](https://codeclou.github.io/hirngespinst/demo/demo--withControls.sketch) file.
 
 &nbsp;
 
@@ -59,13 +59,19 @@ You can easily create such above graphic with **[Sketch](https://www.sketchapp.c
 
 &nbsp;
 
-:black_large_square:**(4)** Insert a slice and export as SVG. Make sure all frame-groups are visible even if the overlap, otherwise they will not get exported.
+:black_large_square:**(4)** OPTIONAL: You can create controls like play, pause, prev and next. If you specify them, the ids of the elements must match. 
+ 
+![](https://codeclou.github.io/hirngespinst/img/04-controls.png)
+
+&nbsp;
+
+:black_large_square:**(5)** Insert a slice and export as SVG. Make sure all frame-groups are visible even if the overlap, otherwise they will not get exported.
  
 ![](https://codeclou.github.io/hirngespinst/img/03.png)
 
 &nbsp;
 
-:black_large_square:**(5)** Open the SVG in an Editor like the [awesome Atom](https://atom.io/) and add the following.
+:black_large_square:**(6)** Open the SVG in an Editor like the [awesome Atom](https://atom.io/) and add the following.
 
 ![](https://codeclou.github.io/hirngespinst/img/04.png)
 
@@ -96,7 +102,7 @@ You can easily create such above graphic with **[Sketch](https://www.sketchapp.c
 &nbsp;
 
 
-:black_large_square:**(6)** Now use your SVG like so in your website
+:black_large_square:**(7)** Now use your SVG like so in your website
 
 ```html
 WILL NOT WORK: <img src="http://myserver/my.svg" />
@@ -111,7 +117,8 @@ WILL WORK:     <object data="http://myserver/my.svg" type="image/svg+xml"></obje
 See working demos:
 
  * :sparkles: [demo with default options](https://codeclou.github.io/hirngespinst/demo/demo.svg)
- * :sparkles: [demo with `frameAutoHide=true`](https://codeclou.github.io/hirngespinst/demo/demo--autoHide.svg) 
+ * :sparkles: [demo with `frameAutoHide=true`](https://codeclou.github.io/hirngespinst/demo/demo--autoHide.svg)
+ * :sparkles: [demo with controls](https://codeclou.github.io/hirngespinst/demo/demo--withControls.svg)
 
 &nbsp;
 
