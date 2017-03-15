@@ -15,33 +15,30 @@ class Hirngespinst {
             isPlaying: true,
             manualPrevOrNextClick: false,
             updateLock: false,
-            overallAnimationDurationInSeconds: 0
         };
         self.state = Object.assign({}, self.initialState);
         self.config = Object.assign({}, {
-            frameAnimationDurationInSeconds: 8,
-            framePauseBetweenFramesInSeconds: 1,
+            frameVisibleInSeconds: 8,
             frameAutoHide: false
         }, options);
         self.fixTspanLeadingWhitespace();
         self.preInitialize();
         self.initializePlayPauseButtons();
         self.initializePrevNextButtons();
-        setInterval(self.update, 100, self, 1);
+        setInterval(self.update, 200, self, 1);
     }
 
     /**
-     * Called every 0.5 seconds.
+     * Called every 0.2 seconds.
      *
      * @param self
      * @param direction {int} 1 for forward direction; -1 for backward direction
      */
     update(self, direction) {
-        const tickModulo = 24;
-
         //
-        // TICK
+        // TICK - 1 tick ~ 0.2 sec
         //
+        const tickModulo = self.config.frameVisibleInSeconds * 5;
         if (self.state.tick !== null && self.state.manualPrevOrNextClick === false) {
             self.state.tick = self.state.tick + 1;
         }
@@ -252,10 +249,6 @@ class Hirngespinst {
         if (hirngespinstFrames !== undefined && hirngespinstFrames !== null && hirngespinstFrames.length > 0) {
             self.state.amountFrames = hirngespinstFrames.length;
         }
-        self.state.overallAnimationDurationInSeconds = (
-                self.config.frameAnimationDurationInSeconds +
-                self.config.framePauseBetweenFramesInSeconds
-            ) * (self.state.amountFrames);
     }
 
 }
