@@ -65,7 +65,7 @@ You can easily create such above graphic with **[Sketch](https://www.sketchapp.c
 
 &nbsp;
 
-:black_large_square:**(5)** Insert a slice and export as SVG. Make sure all frame-groups are visible even if the overlap, otherwise they will not get exported.
+:black_large_square:**(5)** Insert a slice and export as SVG. Make sure all frame-groups are visible even if they overlap, otherwise they will not get exported.
  
 ![](https://codeclou.github.io/hirngespinst/img/03.png)
 
