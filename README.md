@@ -27,8 +27,9 @@
  * convention over configuration - works out of the box
  * progress bar is animated
  * automatic looping
- * minified: js 3.6 KB css 0.6 KB total 4.2 KB
- * gzipped: js 1.4 KB css 0.3 KB total 1.7 KB
+ * indentation of leading whitespace of tspan by 5px each
+ * minified: js 4.7 KB css 0.8 KB total 5.5 KB
+ * gzipped: js 1.6 KB css 0.4 KB total 2.0 KB
 
 
 -----
