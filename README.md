@@ -175,5 +175,5 @@ See [DEVELOPMENT.md](./DEVELOPMENT.md)
 
 ### License
 
-[MIT](./LICENSE.md) © [Bernhard Grünewaldt](https://github.com/clouless)
+[MIT](./LICENSE) © [Bernhard Grünewaldt](https://github.com/clouless)
   
