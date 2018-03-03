@@ -81,7 +81,7 @@ You can easily create such above graphic with **[Sketch](https://www.sketchapp.c
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" type="text/css"?>
-<?xml-stylesheet href="https://unpkg.com/hirngespinst@0.2.0/dist/hirngespinst.min.css" type="text/css"?>
+<?xml-stylesheet href="https://cdn.jsdelivr.net/npm/hirngespinst@0.2.1/dist/hirngespinst.min.css" type="text/css"?>
 <svg width="751px" height="529px" viewBox="0 0 751 529" version="1.1" 
     xmlns="http://www.w3.org/2000/svg" 
     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -91,8 +91,8 @@ You can easily create such above graphic with **[Sketch](https://www.sketchapp.c
       ...
     </g>
     <script type="text/javascript"
-            xlink:href="https://unpkg.com/hirngespinst@0.2.0/dist/hirngespinst.min.js"
-            href="https://unpkg.com/hirngespinst@0.2.0/dist/hirngespinst.min.js"
+            xlink:href="https://cdn.jsdelivr.net/npm/hirngespinst@0.2.1/dist/hirngespinst.min.js"
+            href="https://cdn.jsdelivr.net/npm/hirngespinst@0.2.1/dist/hirngespinst.min.js"
     />
     <script type="text/javascript">
         new hirngespinst();
