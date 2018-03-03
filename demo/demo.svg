@@ -34,7 +34,7 @@
     </g>
     <script type="text/javascript"
         xlink:href="https://codeclou.io/codeclou-eu-privacy-proxy/index.php/cdn.jsdelivr.net/npm/hirngespinst@0.2.1/dist/hirngespinst.min.js"
-        href="https://codeclou.io/codeclou-eu-privacy-proxy/index.php/unpkg.com/cdn.jsdelivr.net/npm/hirngespinst@0.2.1/dist/hirngespinst.min.js"
+        href="https://codeclou.io/codeclou-eu-privacy-proxy/index.php/cdn.jsdelivr.net/npm/hirngespinst@0.2.1/dist/hirngespinst.min.js"
     />
     <script type="text/javascript">
         new hirngespinst();
